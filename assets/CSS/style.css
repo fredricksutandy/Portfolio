@@ -257,7 +257,7 @@ orange{
 }
 .short-about-desc{
     padding: 56px;
-    background-image: url(/assets/Image/grid-background.png);
+    background-image: url(../../assets/Image/grid-background.png);
     background-size: cover;
     /* max-width: 900px; */
     width: 75%;
