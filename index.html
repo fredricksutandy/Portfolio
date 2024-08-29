@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Fredrick's</title>
     <link rel="icon" type="image/x-icon" href="favicon.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,6 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
+
+
+    <link rel="stylesheet" href="assets/CSS/style.css">
+
 </head>
 <body>
     <nav>
@@ -34,19 +38,44 @@
         <a class="dotgothic16-regular" href="#services">Contact</a>
         <a class="dotgothic16-regular" href="#contact">Resume</a>
     </div>
-
-    <img src="Frame 519.png" class="title-name-text" id="responsive-image" alt="" style="width: 100%;">
-    <h1 style="font-size: 12px;color: #171717;">FREDRICK SUTANDY</h1>
-    <div class="px-24">
     <canvas id="matter-canvas"></canvas>
+    <div style="max-width: 1440px;margin: auto;">
+    <img src="Frame 519.png" class="title-name-text" id="responsive-image" alt="" style="width: 100%;">
+    </div>
+    <h1 style="font-size: 12px;color: black;position: absolute;z-index: -1;">FREDRICK SUTANDY</h1>
+    <div class="px-24">
+    
     </div>
     <!-- Other HTML content can be placed here -->
-    <p class="hint montserrat-400">please play with me, my developer work hard to made me :D</p>
 
     <div class="short-about-container section-container">
-        <div class="short-about-desc">
-            <p class="white montserrat-500">With 4 years of professional experience and 6 years of sharpening my skills, I'm still looking forward to gather more experience and seeing those satisfied smiles. Let's team up and nail your vision flawlessly.</p>
+        <div class="short-about-desc montserrat-700 white" style="display: flex;overflow: hidden;position: relative;">
+            <!-- <p class="white montserrat-500">With 4 years of professional experience and 6 years of sharpening my skills, I'm still looking forward to gather more experience and seeing those satisfied smiles. Let's team up and nail your vision flawlessly.</p> -->
+             <!-- <p class="white montserrat-500">
+                Blending design and development, I craft seamless digital experiences as a Frontend Developer and UI UX Designer. Leading my team, I drive innovation and collaboration, turning ideas into impactful user-centered solutions.
+             </p> -->
+             <p class="i-am-text" style="">
+                I Am
+             </p>
+             <div class="animation">
+                <div class="animation-window">
+                    <ul>
+                        <li>Blending Design & Development.</li>
+                        <li>Painting your ideas to Canvas.</li>
+                        <li>Crafting with lines of Code.</li>
+                        <li>Leading a team of Programmers.</li>
+                        <li>Probably Sleeping.</li>
+                        <li>Playing Helldivers 2 sometimes.</li>
+                    </ul>
+                </div>
+             </div>
+
         </div>
+        <style>
+           
+
+        </style>
+
         <div class="short-about-highlight">
             <p class="white montserrat-600">Integrating Resources<br>
                 Designing Experiences<br>
@@ -249,802 +278,140 @@
     </footer>
 </body>
 <style>
-    html {
-        scroll-behavior: smooth;
-    }
-
-    body {
-        padding: 0;
-        margin: 0;
-        background-color: #171717;
-    }
-    p{
-        margin: 0;
-    }
-    .px-24{
-        padding: 0 24px;
-    }
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1440px;
-        margin: 16px auto;
-        padding: 0 16px;
-        box-sizing: border-box;
-        position: relative;
-        top: 0;
-        width: 100%;
-        z-index: 1001;
-    }
-
-    .welcome-link{
-        font-size: 24px;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-    .menu-icon img, .close-icon img{
-        width: 24px;
-    }
-
-    nav a {
-        color: white;
-        text-decoration: none;
-        letter-spacing: 1px;
-        transition: 0.1s ease-out;
-    }
-
-    nav a:hover {
-        color: #FF4800;
-    }
-
-    .nav-link-container {
-        display: flex;
-        gap: 32px;
-    }
-
-    .menu-icon, .close-icon {
-        display: none;
-        font-size: 30px;
-        color: white;
-        cursor: pointer;
-    }
-
-    .curtain-menu {
-        display: none;
-        position: fixed;
-        top: 61px; /* Adjust this to the height of your navbar */
-        left: 0;
-        width: 100%;
-        height: calc(100% - 61px); /* Adjust this to the height of your navbar */
-        background-color: rgba(0, 0, 0, 0.9);
-        flex-direction: column;
-        z-index: 1000;
-    }
-
-    .curtain-menu a {
-        color: white;
-        text-decoration: none;
-        font-size: 24px;
-        /* margin-bottom: 1px; */
-        /* border-bottom: 1px solid white; */
-        background-color: #000000;
-        padding: 16px 24px;
-
-    }
-
-    /* work cards */
-    .works-card-container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 64px 16px;
-    }
-    .arrow-image-work{
-        width: 24px;
-        height: 24px;
-        margin-left: auto;
-    }
     
-    .work-card{
-        max-width: 700px;
-        width: calc(50% - 16px);
-        text-decoration: none;
-    }
-    .work-content{
-        height: 320px;
-        display: flex;
-        justify-content: end;
-        padding: 16px;
-        flex-direction: column;
-        overflow: hidden;
-        position: relative;
-        margin-bottom: 16px;
-    }
-
-    .image-content{
-        height: auto;
-        width: 100%;
-        min-width: 600px;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
-    .work-content::after{
-        content: url(gradient-black.png);
-        height: 80%;
-        position: absolute;
-        z-index: 1;
-        left: 0;
-        bottom: 0;
-    }
-    .work-title{
-        font-size: 32px;
-        z-index: 99;
-        position: relative;
-        margin: 0;
-    }
-    .work-date{
-        font-size: 16px;
-        color: #E1E1E1;
-    }
-    .work-desc{
-        font-size: 16px;
-        width: 90%;
-        color: #d6d6d6;
-        z-index: 99;
-        position: relative;
-        margin: 0;
-
-    }
-    .tag-container{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 6px;
-        align-items: center;
-    }
-    .tag-container .uiux{
-        color: black;
-        background-color: #FF4800;
-        padding: 8px 16px;
-        border-radius: 900px; 
-
-    }
-    .tag-container .frontend{
-        color: black;
-        background-color: white;
-        padding: 8px 16px;
-        border-radius: 900px;
-    }
-
-    /* footer */
-    footer{
-        width: 100%;
-        max-width: 1440px;
-        box-sizing: border-box;
-        margin: 120px auto 120px;
-        width: 100%;
-        padding: 0 16px;
-    }
-
-    footer.mw-700{
-        max-width: 700px;
-    }
-    .back-to-top {
-        display: flex;
-        gap: 16px;
-        margin-left: auto;
-        justify-content: flex-end;
-        color: white;
-        text-decoration: none;
-        align-items: center;
-        margin-bottom: 80px;
-    }
-
-    .footer-link-container{
-        display: flex;
-        padding-bottom: 24px;
-        border-bottom: 1px solid #53596B;
-        gap: 32px;
-        margin-bottom: 40px;
-    }
-
-    .footer-link-container a{
-        color: white;
-        text-decoration: none;
-        font-size:16px;
-        letter-spacing: 1px;
-        font-weight: normal !important;
-    }
-
-    .lets-talk-title{
-        color: white;
-        font-size: 64px;
-        font-weight: 600 !important;
-        margin-bottom: 32px;
-    }
-    .lets-talk-title i{
-        font-weight: 400 !important;
-    }
-
-    .lets-talk-link{
-        padding: 16px 24px;
-        background-color: white;
-        color: black;
-        text-decoration: none;
-        transition: 0.1s ease-out;
-        border-bottom: 2px solid white;
-    }
-    .lets-talk-link:hover{
-        background: #FF4800;
-        color: white;
-    }
-
-    .font-16{
-        font-size: 16px;
-    }
-
-    .mb-24{
-        margin-bottom: 24px;
-    }
-
-    orange{
-        color: #FF4800;
-        font-style: italic;
-    }
-
-    .short-about-desc, .short-about-highlight, .short-about-highlight, .short-about-potrait, .short-about-arrow, .short-about-based{
-        border: 1px solid #FF4800;
-    }
-    .short-about-desc{
-        padding: 64px;
-        background-image: url(grid-background.png);
-        background-size: cover;
-        /* max-width: 900px; */
-        width: 75%;
-        flex: 1 1 auto;
-        box-sizing: border-box;
-        font-size: 24px;
-    }   
-    .short-about-highlight{
-        padding: 40px;
-        min-width: 200px;
-        width: 25%;
-        display: flex;
-        box-sizing: border-box;
-        flex-direction: column;
-        justify-content: center;
-        flex: 1 1 25%;
-    }
-    .short-about-highlight p{
-        text-align: right;
-        margin: 0 auto;
-        max-width: 200px;
-        width: 100%;
-    }
-    .short-about-potrait{
-        width: 20%;
-        box-sizing: border-box;
-        min-height: 100px;
-        min-width: 200px;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-    }
-    .short-about-potrait img{
-        height: 100%;
-        margin: auto;
-        display: block;
-    }
-    .short-about-based{
-        width: 50%;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 24px;
-        gap: 16px;
-        flex: 1 1 auto;
-    }
-    .short-about-based p{
-        text-align: end;
-    }
-    .short-about-based img{
-        width: 40px;
-        height: 40px;
-    }
-    .short-about-arrow{
-        box-sizing: border-box;
-        display: flex;
-        gap: 16px;
-        justify-content: center;
-        align-items: center;
-        min-height: 100px;
-        flex: 1 1 30%;
-        padding: 0 16px;
-    }
-    .short-about-arrow img{
-        width: 60px;
-        height: max-content;
-    }
-    .short-about-arrow img:nth-child(1){
-        opacity: 0.3;
-    }
-    .short-about-arrow img:nth-child(2){
-        opacity: 0.6;
-    }
-
-    .section-container{
-        max-width: 1440px;
-        margin: 32px auto 200px;
-        padding: 0 24px;
-    }
-    .section-title-container{
-        display: flex;
-        justify-content: space-between;
-        align-items: end;
-        margin-bottom: 24px;
-    }
-
-    .section-title-container img{
-        width: 100px;
-        height: 120px;
-    }
-    .short-about-container{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .section-title{
-        font-size: 96px;
-        color: white;
-        margin: 0;
-        line-height: 100%;
-    }
-
-    .about-container{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .about-me-content-container{
-        padding: 32px 24px;
-        background-color: #1A1A1A;
-        border-bottom: 1px #373737 solid;
-    }
-
-    .about-me-content-title{
-        color: white;
-        font-size: 28px;
-    }
-
-    .about-title-container{
-        display: flex;
-        gap: 16px;
-        align-items: center;
-        margin-bottom: 24px;
-    }
-
-    .about-title-container img{
-        width: 24px;
-        height: 24px;
-    }
-
-    .about-me-content-container .montserrat-500.white{
-        font-size: 20px;
-        margin-bottom: 4px;
-    }
-
-    .date, .employer, .role{
-        font-family: "Montserrat", sans-serif;
-    }
-
-    .date, .employer{
-        /* font-size: 16px; */
-        font-weight: 400;
-    }
-
-    .role{
-        margin-bottom: 4px;
-    }
-
-    .section-title{
-        font-size: 96px;
-        color: white;
-    }
-
-    .white {
-        color: white;
-    }
-
-    .orange {
-        color: #FF4800;
-    }
-
-    .grey-font {
-        color: #999999;
-    }
-
-    .font-16 {
-        font-size: 16px;
-    }
-
-    .mb-24 {
-        margin-bottom: 24px;
-    }
-
-    .dotgothic16-regular {
-        font-family: "DotGothic16", sans-serif;
-        font-style: normal;
-    }
-
-    .montserrat-300 {
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 300;
-    }
-
-    .montserrat-400 {
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-    }
-
-    .montserrat-500 {
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 500;
-    }
-
-    .montserrat-600 {
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 600;
-    }
-
-    .montserrat-700 {
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 700;
-    }
-
-    .montserrat-800 {
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 800;
-    }
-
-    @media only screen and (max-width: 488px) {
-        .nav-link-container {
-            gap: 24px;
-        }
-    }
-
-    @media (max-width: 648px) {
-        .nav-link-container a {
-            display: none;
-        }
-
-        .menu-icon {
-            display: flex;
-            padding: 16px;
-        }
-
-        .close-icon{
-            padding: 16px;
-            background-color: #171717;
-        }
-        
-        .curtain-menu, .close-icon {
-            display: none;
-        }
-
-        .close-icon, .menu-icon{
-            height: 61px;
-            box-sizing: border-box;
-            transition: 0.1s ease-in-out;
-        }
-
-        .curtain-menu{
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 0;
-            box-sizing: border-box;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            border-bottom: #ffffff;
-            border-block-end: 1px solid gray;
-            background-color: #000000;
-            z-index: 1001;
-        }
-
-        .welcome-link{
-            padding: 16px;
-        }
-    }
-
-    @media only screen and (max-width: 1140px) {
-        .short-about-desc{
-            padding: 40px;
-            font-size: 24px;
-        }
-        .short-about-highlight{
-            padding: 24px;
-        }
-    }
-
-    @media only screen and (max-width: 1048px) {
-        .short-about-arrow img{
-        transform: rotate(180deg);
-    }
-    }
-
-    @media only screen and (max-width: 488px) {
-        .short-about-desc{
-            font-size: 18px;
-            padding: 24px;
-        }
-        .short-about-arrow img{
-        transform: rotate(180deg);
-        width: calc(30%);
-    }
-
-    .short-about-potrait{
-        width: 50%;
-        min-width: 0;
-    }
-
-    .short-about-arrow{
-        width: 50%;
-        gap: 6px;
-        padding: 0 8px;
-    }
-
-    .short-about-highlight p{
-        margin: 0 0 0 auto;
-    }
-    }
-    @media only screen and (max-width: 488px) {
-        .about-me-content-title{
-            font-size: 20px;
-        }
-
-        .about-me-content-container .montserrat-500.white{
-            font-size: 16px;
-        }
-
-        .grey-font.font-16-14{
-            font-size: 14px;
-        }
-
-        .section-title{
-            font-size: 56px;
-        }
-    }
-
-    @media only screen and (max-width: 991px) {
-      
-
-      .work-content{
-      height: 240px;
-      display: flex;
-      justify-content: end;
-      padding: 8px;
-      flex-direction: column;
-      overflow: hidden;
-      position: relative;
-      margin-bottom: 16px;
-  }
-
-  .image-content{
-      height: 100%;
-      width: auto !important;
-      min-width: 0 !important;
-  }
-  }
-
-  @media only screen and (max-width: 700px) {
-      .works-card-container{
-          flex-direction: column;
-      }
-
-      .work-card{
-          width: 100%;
-          max-width: 100%;
-      }
-
-      .work-content{
-      height: 280px;
-      display: flex;
-      justify-content: end;
-      padding: 8px;
-      flex-direction: column;
-      overflow: hidden;
-      position: relative;
-      margin-bottom: 16px;
-  }
-
-  .image-content{
-      height: auto;
-      width: 100% !important;
-  }
-  }
-
-  @media only screen and (max-width: 552px) {
-    .work-card{
-      background-color: transparent;
-    }
-    .work-content{
-    height: auto;
-    display: flex;
-    justify-content: end;
-    padding: 8px;
-    flex-direction: column;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 16px;
-}
-
-.image-content{
-    height: auto;
-    width: 100% !important;
-    position: static !important;
-    margin-bottom: 16px;
-  }
-
-  .work-content::after{
-      display: none !important;
-  }
-
-  .work-title{
-      font-size: 24px;
-  }
-  .work-desc{
-      font-size: 12px;
-  }
-
-  .tag-container{
-      font-size: 12px;
-  }
-}
-
-
-/* matter js */
-canvas {
-            display: block;
-            border: 1px solid white;
-            border-block-end: 1px solid gray;
-            max-width: 1440px;
-            max-height: 500px;
-            width: 100%;
-            height: 100%;
-            margin: 0 auto 0;
-        }
-
-        .title-name-text{
-            width: 100%;
-            max-width: 1440px;
-            display: block;
-            margin: 80px auto 8px;
-            padding: 0 24px;
-            box-sizing: border-box;
-        }
-
-        .matter-canvas{
-            display: block;
-            margin: 80px auto 0;
-        }
-
-        .hint{
-            font-size: 10px;
-            font-style: italic;
-            color: white;
-            max-width: 1440px;
-            margin:  4px auto 200px;
-            padding: 0 24px;
-        }
 </style>
 <script>
-    // Initialize Matter.js
-    const { Engine, World, Bodies, Mouse, MouseConstraint } = Matter;
+// Initialize Matter.js
+const { Engine, World, Bodies, Mouse, MouseConstraint } = Matter;
 
-    // Create an engine
-    const engine = Engine.create();
+// Create an engine
+const engine = Engine.create();
 
-    // Get a reference to the canvas element
-    const canvas = document.getElementById('matter-canvas');
+// Get a reference to the canvas element
+const canvas = document.getElementById('matter-canvas');
 
-    // Create a renderer
-    const render = Matter.Render.create({
-        canvas: canvas,
-        engine: engine,
-        options: {
-            width: Math.min(window.innerWidth, 1440),
-            height: Math.min(window.innerHeight, 500),
-            wireframes: false,
-            background: '#000' // Set the background color of the canvas
-        }
-    });
+// Define a fixed height for the canvas
+const fixedCanvasHeight = 520; // Change this value as needed
 
-    // Create some bodies
-    const objects = [];
-    const images = ["Frame 521.png", "Frame 522.png","Frame 523.png","Frame 524.png","Frame 525.png","Frame 526.png","Frame 527.png","Frame 528.png","Frame 529.png","Shape-1.svg","Shape.svg"];
-
-    function createBodyFromImage(image, x, y) {
-        const scale = getScale(); // Calculate scale based on window width
-
-const bodyWidth = image.width * scale;
-const bodyHeight = image.height * scale;
-
-return Bodies.rectangle(x, y, bodyWidth, bodyHeight, {
-    render: {
-        chamfer: {
-    radius: 10
-  },
-        sprite: {
-            texture: image.src,
-            xScale: scale,
-            yScale: scale,
-        }
+// Create a renderer
+const render = Matter.Render.create({
+    canvas: canvas,
+    engine: engine,
+    options: {
+        width: Math.min(window.innerWidth, 1440),
+        height: fixedCanvasHeight,
+        wireframes: false,
+        background: '#000' // Set the background color of the canvas
     }
 });
+
+// Create some bodies
+const objects = [];
+const images = ["Frame 521.png", "Frame 522.png", "Frame 523.png", "Frame 529.png","Frame 528.png","Shape-1.svg", "next_textimg.png", "react_textimg.png", "logos_react.png", "logos_tailwind.png", "logos_figma.png"];
+
+function createBodyFromImage(image, x, y) {
+    const scale = getScale(); // Calculate scale based on window width
+
+    const bodyWidth = image.width * scale;
+    const bodyHeight = image.height * scale;
+
+    return Bodies.rectangle(x, y, bodyWidth, bodyHeight, {
+        render: {
+            sprite: {
+                texture: image.src,
+                xScale: scale,
+                yScale: scale,
+            }
+        },
+        chamfer: {
+                radius: [40,40,40,40]
+            },
+    });
 }
 
 // Function to scale images based on screen width
 function getScale() {
-return window.innerWidth < 648 ? 0.85 : 1;
+    return window.innerWidth < 648 ? 0.85 : 1;
 }
 
+// Load images and create bodies
+let imagesLoaded = 0;
 
-    // Load images and create bodies
-    let imagesLoaded = 0;
+images.forEach((imageSrc, index) => {
+    const image = new Image();
+    image.src = imageSrc;
+    image.onload = () => {
+        const x = Math.min(window.innerWidth, 1440) / 4 + Math.random() * Math.min(window.innerWidth, 1440) / 2;
+        const y = fixedCanvasHeight / 4;
+        const object = createBodyFromImage(image, x, y);
+        objects.push(object);
 
-    images.forEach((imageSrc, index) => {
-        const image = new Image();
-        image.src = imageSrc;
-        image.onload = () => {
-            const x = Math.min(window.innerWidth, 1440) / 4 + Math.random() * Math.min(window.innerWidth, 1440) / 2;
-            const y = Math.min(window.innerHeight, 500) / 4;
-            const object = createBodyFromImage(image, x, y);
-            objects.push(object);
+        imagesLoaded++;
+        if (imagesLoaded === images.length) {
+            // Add all the bodies to the world once all images are loaded
+            World.add(engine.world, objects);
 
-            imagesLoaded++;
-            if (imagesLoaded === images.length) {
-                // Add all the bodies to the world once all images are loaded
-                World.add(engine.world, objects);
+            // Create walls
+            function createWalls() {
+                const wallOptions = {
+                    isStatic: true,
+                    render: { visible: false }
+                };
+                const wallThickness = 50;
+                const canvasWidth = render.canvas.width;
+                const canvasHeight = render.canvas.height;
 
-                // Create walls
-                function createWalls() {
-                    const wallOptions = {
-                        isStatic: true,
-                        render: { visible: false }
-                    };
-                    const wallThickness = 50;
-                    const canvasWidth = render.canvas.width;
-                    const canvasHeight = render.canvas.height;
+                return [
+                    Bodies.rectangle(canvasWidth / 2, canvasHeight + wallThickness / 2, canvasWidth + wallThickness * 2, wallThickness, wallOptions),
+                    Bodies.rectangle(-wallThickness / 2, canvasHeight / 2, wallThickness, canvasHeight + wallThickness * 2, wallOptions),
+                    Bodies.rectangle(canvasWidth + wallThickness / 2, canvasHeight / 2, wallThickness, canvasHeight + wallThickness * 2, wallOptions),
+                    Bodies.rectangle(canvasWidth / 2, -wallThickness / 2, canvasWidth + wallThickness * 2, wallThickness, wallOptions)
+                ];
+            }
 
-                    return [
-                        Bodies.rectangle(canvasWidth / 2, canvasHeight + wallThickness / 2, canvasWidth + wallThickness * 2, wallThickness, wallOptions),
-                        Bodies.rectangle(-wallThickness / 2, canvasHeight / 2, wallThickness, canvasHeight + wallThickness * 2, wallOptions),
-                        Bodies.rectangle(canvasWidth + wallThickness / 2, canvasHeight / 2, wallThickness, canvasHeight + wallThickness * 2, wallOptions),
-                        Bodies.rectangle(canvasWidth / 2, -wallThickness / 2, canvasWidth + wallThickness * 2, wallThickness, wallOptions)
-                    ];
-                }
+            // Initial walls creation
+            let walls = createWalls();
+            World.add(engine.world, walls);
 
-                // Initial walls creation
-                let walls = createWalls();
+            // Add mouse control
+            const mouse = Mouse.create(render.canvas);
+            const mouseConstraint = MouseConstraint.create(engine, {
+                mouse: mouse
+            });
+            World.add(engine.world, mouseConstraint);
+
+            // Keep the mouse in sync with rendering
+            render.mouse = mouse;
+
+            // Run the engine
+            Engine.run(engine);
+
+            // Run the renderer
+            Matter.Render.run(render);
+
+            // Handle window resize
+            let initialWidth = window.innerWidth;
+
+            window.addEventListener('resize', () => {
+                const newWidth = Math.min(window.innerWidth, 1440);
+
+                render.options.width = newWidth;
+                canvas.width = newWidth;
+
+                // Reposition objects
+                objects.forEach(object => {
+                    Matter.Body.setPosition(object, {
+                        x: object.position.x * (newWidth / initialWidth),
+                        y: object.position.y // Maintain the same y position
+                    });
+                });
+
+                // Remove old walls and add new ones
+                World.remove(engine.world, walls);
+                walls = createWalls();
                 World.add(engine.world, walls);
 
-                // Add mouse control
+                // Add mouse control again
                 const mouse = Mouse.create(render.canvas);
                 const mouseConstraint = MouseConstraint.create(engine, {
                     mouse: mouse
@@ -1054,57 +421,49 @@ return window.innerWidth < 648 ? 0.85 : 1;
                 // Keep the mouse in sync with rendering
                 render.mouse = mouse;
 
-                // Run the engine
-                Engine.run(engine);
+                // Update initial width
+                initialWidth = newWidth;
+            });
 
-                // Run the renderer
-                Matter.Render.run(render);
+            // Enable scrolling on desktop when mouse is over the canvas
+            canvas.addEventListener('wheel', (event) => {
+                if (!mouseConstraint.body) {
+                    event.preventDefault();
+                    // Adjust the scroll speed by multiplying the deltaY
+                    window.scrollBy({
+                        top: event.deltaY * 3, // Increase the scroll speed
+                        behavior: 'smooth'
+                    });
+                }
+            });
 
-                // Handle window resize
-                let initialWidth = window.innerWidth;
-                let initialHeight = window.innerHeight;
+            // Enable scrolling on mobile when touching the canvas
+            let touchStartY = 0;
 
-                window.addEventListener('resize', () => {
-                    const newWidth = Math.min(window.innerWidth, 1440);
-                    const newHeight = Math.min(window.innerHeight, 500);
-                    const scaleX = newWidth / initialWidth;
-                    const scaleY = newHeight / initialHeight;
+            canvas.addEventListener('touchstart', (event) => {
+                if (!mouseConstraint.body) {
+                    touchStartY = event.touches[0].clientY;
+                }
+            });
 
-                    render.options.width = newWidth;
-                    render.options.height = newHeight;
-                    canvas.width = newWidth;
-                    canvas.height = newHeight;
+            canvas.addEventListener('touchmove', (event) => {
+                if (!mouseConstraint.body) {
+                    const touchEndY = event.touches[0].clientY;
+                    const deltaY = touchEndY - touchStartY;
 
-                    // Reposition objects
-                    objects.forEach(object => {
-                        Matter.Body.setPosition(object, {
-                            x: object.position.x * scaleX,
-                            y: object.position.y * scaleY
-                        });
+                    // Increase scroll speed by scaling the deltaY
+                    window.scrollBy({
+                        top: -deltaY * 2, // Increase the scroll speed
+                        behavior: 'smooth'
                     });
 
-                    // Remove old walls and add new ones
-                    World.remove(engine.world, walls);
-                    walls = createWalls();
-                    World.add(engine.world, walls);
+                    touchStartY = touchEndY; // Update the start position
+                }
+            });
+        }
+    };
+});
 
-                    // Add mouse control again
-                    const mouse = Mouse.create(render.canvas);
-                    const mouseConstraint = MouseConstraint.create(engine, {
-                        mouse: mouse
-                    });
-                    World.add(engine.world, mouseConstraint);
-
-                    // Keep the mouse in sync with rendering
-                    render.mouse = mouse;
-
-                    // Update initial dimensions
-                    initialWidth = newWidth;
-                    initialHeight = newHeight;
-                });
-            }
-        };
-    });
 </script>
 <script>
 function toggleMenu() {
@@ -1137,4 +496,6 @@ function changeImage() {
 // Initial check
 changeImage();
 </script>
+<script src="assets/JS/index.js"></script>
+
 </html>
