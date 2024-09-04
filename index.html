@@ -11,19 +11,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <link rel="stylesheet" href="assets/CSS/style.css">
 
 </head>
 <body>
     <nav>
-        <a class="montserrat-600 white welcome-link" href=""><img src="hash.svg" alt="">Welcome</a>
+        <a class="montserrat-600 white welcome-link" href="" data-aos="fade-up"><img src="hash.svg" alt="">Welcome</a>
         <div class="nav-link-container">
-            <a class="dotgothic16-regular" href="#works">Works</a>
-            <a class="dotgothic16-regular" href="#about">About</a>
-            <a class="dotgothic16-regular" href="#footer">Contact</a>
-            <a class="dotgothic16-regular" href="Fredrick_Sutandy_UIUXDesigner.pdf" download>Resume</a>
+            <a class="dotgothic16-regular" href="#works" data-aos="fade-up" data-aos-delay="200">Works</a>
+            <a class="dotgothic16-regular" href="#about" data-aos="fade-up" data-aos-delay="300">About</a>
+            <a class="dotgothic16-regular" href="#footer" data-aos="fade-up" data-aos-delay="400">Contact</a>
+            <a class="dotgothic16-regular" href="Fredrick_Sutandy_UIUXDesigner.pdf" download data-aos="fade-up" data-aos-delay="500">Resume</a>
         </div>
         <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
             <img src="carbon_menu.svg" alt="">
@@ -99,119 +100,114 @@
 
     <div class="work-container section-container" id="works">
         <div class="section-title-container">
-            <p class="section-subtitle montserrat-400">Selected projects
+            <p class="section-subtitle montserrat-400" data-aos="fade-up">Selected projects
             </p>
-            <h2 class="section-title montserrat-700"><img src="./assets/Image/ellipse-title.svg" alt=""> My Past <orange>Works<orange></h2>
+            <h2 class="section-title montserrat-700" data-aos="fade-up"><img src="./assets/Image/ellipse-title.svg" alt=""> My Past <orange>Works<orange></h2>
             </div>
          <div class="works-card-container">
-            <a href="Pages/Edubridge.html" class="work-card">
+            <a href="Pages/Edubridge.html" class="work-card" data-aos="fade-up">
                 <div class="work-content">
                     <img src="edubridge-thumb.png" alt="" class="image-content">
                     <img src="" alt="" class="image-gradient">
-                    <p class="work-title montserrat-600 white">Edubridge</p>
-                    <p class="work-desc montserrat-400">Redesign project for an education institution business for better design and experiences</p>
+                    <p class="work-title montserrat-600 white mb-8">Edubridge</p>
+                    <div class="tag-container">
+                        <p class="uiux dotgothic16-regular">UI/UX Designer</p>
+                        <p class="frontend dotgothic16-regular">Frontend Development</p>
+                        <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work">
+                    </div>
                 </div>
-                <div class="tag-container">
-                    <p class="uiux dotgothic16-regular">UI/UX Designer</p>
-                    <p class="frontend dotgothic16-regular">Frontend Development</p>
-                    <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work">
-                </div>
+                
             </a>
-            <a href="Pages/Erha.html" class="work-card">
+            <a href="Pages/Erha.html" class="work-card" data-aos="fade-up" data-aos-delay="400">
                 <div class="work-content">
                     <img src="ANGE.png" alt="" class="image-content">
                     <img src="" alt="" class="image-gradient">
-                    <p class="work-title montserrat-600 white">ERHA Group</p>
-                    <p class="work-desc montserrat-400">Prototyping project for better visualization on how the real product would look like</p>
+                    <p class="work-title montserrat-600 white mb-8">ERHA Group</p>
+                    <div class="tag-container">
+                        <p class="uiux dotgothic16-regular">UI Prototyping</p>
+                        <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work">
+                    </div>     
                 </div>
-                <div class="tag-container">
-                    <p class="uiux dotgothic16-regular">UI Prototyping</p>
-                    <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work">
-                </div>
+                
             </a>
-            <a href="Pages/Jaya.html" class="work-card">
+            <a href="Pages/Jaya.html" class="work-card" data-aos="fade-up">
                 <div class="work-content">
                     <img src="Jaya.png" alt="" class="image-content">
                     <img src="" alt="" class="image-gradient">
-                    <p class="work-title montserrat-600 white">Jaya Group</p>
-                    <p class="work-desc montserrat-400">Development project for Jaya Group to give support their business and online presence</p>
-                </div>
-                <div class="tag-container">
-                    <p class="frontend dotgothic16-regular">Frontend Development</p>
-                    <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work">
-                </div>
+                    <p class="work-title montserrat-600 white mb-8">Jaya Group</p>
+                    <div class="tag-container">
+                        <p class="frontend dotgothic16-regular">Frontend Development</p>
+                        <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work">
+                    </div>                </div>
+                
             </a>
-            <a href="Pages/WSMS.html" class="work-card">
+            <a href="Pages/WSMS.html" class="work-card" data-aos="fade-up" data-aos-delay="400">
                 <div class="work-content"> 
                     <img src="WS.png" alt="" class="image-content">
                     <img src="" alt="" class="image-gradient">
-                    <p class="work-title montserrat-600 white">Willy Soemantri Music School</p>
-                    <p class="work-desc montserrat-400">Design project to help a Music School developed and improve their business process digitally</p>
-                </div>
-                <div class="tag-container">
-                    <p class="uiux dotgothic16-regular">UI/UX Designer</p>
-                    <p class="frontend dotgothic16-regular">Frontend Development</p>
-                    <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work">
-                </div>
+                    <p class="work-title montserrat-600 white mb-8">Willy Soemantri Music School</p>
+                    <div class="tag-container">
+                        <p class="uiux dotgothic16-regular">UI/UX Designer</p>
+                        <p class="frontend dotgothic16-regular">Frontend Development</p>
+                        <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work">
+                    </div>                </div>
+                
             </a>
          </div>
     </div>
 
     <div class="work-container section-container">
         <div class="section-title-container">
-            <p class="section-subtitle montserrat-400">Personal projects
+            <p class="section-subtitle montserrat-400" data-aos="fade-up">Personal projects
             </p>
-            <h2 class="section-title montserrat-700"><img src="./assets/Image/ellipse-title.svg" alt="">Me Having <orange>Fun<orange></h2>
+            <h2 class="section-title montserrat-700" data-aos="fade-up"><img src="./assets/Image/ellipse-title.svg" alt="">Me Having <orange>Fun<orange></h2>
             </div>
          <div class="works-card-container">
-            <a href="Pages/QADS.html" class="work-card">
+            <a href="Pages/QADS.html" class="work-card" data-aos="fade-up">
                 <div class="work-content">
                     <img src="Qads-thumb.png" alt="" class="image-content">
                     <img src="" alt="" class="image-gradient">
-                    <p class="work-title montserrat-600 white">Qads</p>
-                    <p class="work-desc montserrat-400">A drafted project of ads business from an old job</p>
-                </div>
-                <div class="tag-container">
-                    <p class="uiux dotgothic16-regular">UI/UX Designer</p>
-                    <p class="frontend dotgothic16-regular">Frontend Development</p>
-                    <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work">
-                </div>
+                    <p class="work-title montserrat-600 white mb-8">Qads</p>
+                    <div class="tag-container">
+                        <p class="uiux dotgothic16-regular">UI/UX Designer</p>
+                        <p class="frontend dotgothic16-regular">Frontend Development</p>
+                        <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work">
+                    </div>                </div>
+                
             </a>
-            <a href="Pages/FTL.html" class="work-card">
+            <a href="Pages/FTL.html" class="work-card" data-aos="fade-up" data-aos-delay="400">
                 <div class="work-content">
                     <img src="FTL-thumb.png" alt="" class="image-content">
                     <img src="" alt="" class="image-gradient">
-                    <p class="work-title montserrat-600 white">FTL Gym</p>
-                    <p class="work-desc montserrat-400">A fun redesign project for a renowned GYM place to match more to its brand</p>
-                </div>
-                <div class="tag-container">
-                    <p class="uiux dotgothic16-regular">UI/UX Designer</p>
-                    <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work">
-                </div>
+                    <p class="work-title montserrat-600 white mb-8">FTL Gym</p>
+                    <div class="tag-container">
+                        <p class="uiux dotgothic16-regular">UI/UX Designer</p>
+                        <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work">
+                    </div>                </div>
+                
             </a>
-            <a href="Pages/Metamorf.html" class="work-card">
+            <a href="Pages/Metamorf.html" class="work-card" data-aos="fade-up">
                 <div class="work-content">
                     <img src="Metamorf-thumb.png" alt="" class="image-content">
                     <img src="" alt="" class="image-gradient">
-                    <p class="work-title montserrat-600 white">Metamorf</p>
-                    <p class="work-desc montserrat-400">A quick UI design challenge of a more elegance territory</p>
-                </div>
-                <div class="tag-container">
-                    <p class="uiux dotgothic16-regular">UI/UX Designer</p>
-                    <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work">
-                </div>
+                    <p class="work-title montserrat-600 white mb-8">Metamorf</p>
+                    <div class="tag-container">
+                        <p class="uiux dotgothic16-regular">UI/UX Designer</p>
+                        <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work">
+                    </div>                </div>
+                
             </a>
     </div>
 </div>
 
     <div class="about-container section-container" id="about">
         <div class="section-title-container">
-            <p class="section-subtitle montserrat-400">A little backstory
+            <p class="section-subtitle montserrat-400" data-aos="fade-up">A little backstory
             </p>
-            <h2 class="section-title montserrat-700"><img src="./assets/Image/ellipse-title.svg" alt=""> More About <orange>Me<orange></h2>
+            <h2 class="section-title montserrat-700" data-aos="fade-up"><img src="./assets/Image/ellipse-title.svg" alt=""> More About <orange>Me<orange></h2>
         </div>
             <div>
-            <div class="about-me-content-container">
+            <div class="about-me-content-container" data-aos="fade-up">
                 <div class="about-title-container">
                     <img src="carbon_education.svg" alt="">
                     <p class="montserrat-700 about-me-content-title">Education</p>
@@ -219,7 +215,7 @@
                 <p class="montserrat-500 white">Bachelor of Computer Science</p>
                 <p class="montserrat-400 grey-font font-16-14">Bina Nusantara university, indonesia | 2017 - 2021 | GPA 3.57</p>
             </div>
-            <div class="about-me-content-container">
+            <div class="about-me-content-container" data-aos="fade-up">
                 <div class="about-title-container">
                     <img src="carbon_badge.svg" alt="">
                     <p class="montserrat-700 about-me-content-title">Employment history</p>
@@ -239,7 +235,7 @@
                     <p class="montserrat-500 white">Designer, Frontend developer</p>
                     <p class="date grey-font font-16-14 mb-24">Waroenk Kito | Intern | Feb 2020 - Dec 2020</p>
             </div>
-            <div class="about-me-content-container">
+            <div class="about-me-content-container" data-aos="fade-up">
                 <div class="about-title-container">
                     <img src="carbon_data-categorical.svg" alt="">
                     <p class="montserrat-700 about-me-content-title">Skills</p>
@@ -250,7 +246,7 @@
                 <p class="montserrat-400 grey-font font-16-14 mb-24">HTML, CSS, Javascript, JQuery, React</p>
             
             </div>
-            <div class="about-me-content-container">
+            <div class="about-me-content-container" data-aos="fade-up">
                 <div class="about-title-container">
                     <img src="carbon_certificate-check.svg" alt="">
                     <p class="montserrat-700 about-me-content-title">Certification</p>
@@ -263,17 +259,17 @@
     </div>
 
     <footer class="" id="footer">
-        <a href="#top" class="back-to-top montserrat-400">
+        <a href="#top" class="back-to-top montserrat-400"data-aos="fade-up">
             Back to top
             <img src="back-to-top.svg" alt="">
         </a>
-        <div class="footer-link-container">
+        <div class="footer-link-container" data-aos="fade-up">
             <a class="dotgothic16-regular" href="#works">Works</a>
             <a class="dotgothic16-regular" href="#about">About</a>
             <a class="dotgothic16-regular" href="#footer">Contact</a>
             <a class="dotgothic16-regular" href="Fredrick_Sutandy_UIUXDesigner.pdf" download>Resume</a>
         </div>
-        <div class="lets-talk-container montserrat-400">
+        <div class="lets-talk-container montserrat-400" data-aos="fade-up">
             <p class="lets-talk-title">Lets <i>Talk!</i> <img src="fxemoji_waving.png" alt=""></p>
             <a href="https://www.linkedin.com/in/fredrick-sutandy-4b6535206/" class="linkedin lets-talk-link montserrat-500">LinkedIn</a>
             <a href="mailto:fredricksutandy2601@gmail.com" class="e-mail lets-talk-link montserrat-500">E-mail</a>
@@ -284,6 +280,8 @@
     
 </style>
 <script>
+AOS.init();
+
 // Initialize Matter.js
 const { Engine, World, Bodies, Mouse, MouseConstraint } = Matter;
 

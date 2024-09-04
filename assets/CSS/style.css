@@ -161,19 +161,18 @@ nav a:hover {
     flex-wrap: wrap;
     gap: 6px;
     align-items: center;
+    z-index: 2;
 }
 .tag-container .uiux{
     color: black;
     background-color: #FF4800;
     padding: 8px 16px;
-    border-radius: 900px; 
 
 }
 .tag-container .frontend{
     color: black;
     background-color: white;
     padding: 8px 16px;
-    border-radius: 900px;
 }
 
 /* footer */
@@ -241,6 +240,10 @@ footer.mw-700{
 
 .font-16{
     font-size: 16px;
+}
+
+.mb-8{
+    margin-bottom: 8px;
 }
 
 .mb-24{
@@ -751,6 +754,7 @@ margin-bottom: 16px;
 
 .work-title{
   font-size: 24px;
+  font-weight: 800;
 }
 .work-desc{
   font-size: 12px;
