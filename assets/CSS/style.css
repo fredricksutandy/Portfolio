@@ -8,11 +8,26 @@ body {
     /* background-color: #171717; */
     background-color: #000000;
 }
+
 p{
     margin: 0;
 }
 .px-24{
     padding: 0 24px;
+}
+.border-4{
+    border-radius: 4px;
+}
+.border-8{
+    border-radius: 8px;
+}
+
+.flex{
+    display: flex;
+}
+
+.w-100{
+    width: 100%;
 }
 nav {
     display: flex;
@@ -90,17 +105,27 @@ nav a:hover {
 
 }
 
+.white.flex{
+    align-items: center;
+}
+
+.white.flex img{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
 /* work cards */
 .works-card-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 64px 16px;
+    justify-content: center;
 }
 .arrow-image-work{
     width: 24px;
     height: 24px;
     margin-left: auto;
+    transition: all 0.4s ease;
 }
 
 .work-card{
@@ -108,8 +133,16 @@ nav a:hover {
     width: calc(50% - 16px);
     text-decoration: none;
 }
+
+.work-card:hover{
+    transform: translateX(10px) !important;
+    transition-delay: 0ms !important;
+}
+
+.work-card:hover .arrow-image-work{
+    transform: rotate(45deg);
+}
 .work-content{
-    height: 320px;
     display: flex;
     justify-content: end;
     padding: 16px;
@@ -121,12 +154,12 @@ nav a:hover {
 }
 
 .image-content{
-    height: 100%;
+    height: auto;
     width: 100%;
-    min-width: 600px;
-    position: absolute;
     top: 0;
     left: 0;
+    margin-bottom: 8px;
+    border-radius: 4px;
 }
 
 .work-content::after{
@@ -180,7 +213,7 @@ footer{
     width: 100%;
     max-width: 1440px;
     box-sizing: border-box;
-    margin: 120px auto 120px;
+    margin: 120px auto 32px;
     width: 100%;
     padding: 0 16px;
 }
@@ -204,7 +237,6 @@ footer.mw-700{
     padding-bottom: 24px;
     border-bottom: 1px solid #53596B;
     gap: 32px;
-    margin-bottom: 40px;
 }
 
 .footer-link-container a{
@@ -225,17 +257,36 @@ footer.mw-700{
     font-weight: 400 !important;
 }
 
+.lets-talk-container{
+    justify-content: center;
+    display: flex;
+    gap: 8px;
+    margin-top:16px;
+    flex-wrap: wrap;
+}
+
 .lets-talk-link{
-    padding: 16px 24px;
+    padding: 24px 40px;
     background-color: white;
     color: black;
     text-decoration: none;
     transition: 0.1s ease-out;
-    border-bottom: 2px solid white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
+
+.lets-talk-link img{
+    filter: grayscale(1) invert(1);
+}
+
 .lets-talk-link:hover{
     background: #FF4800;
     color: white;
+}
+
+.lets-talk-link:hover img{
+    filter: grayscale(1) invert(0);
 }
 
 .font-16{
@@ -250,14 +301,45 @@ footer.mw-700{
     margin-bottom: 24px;
 }
 
+.mb-40{
+    margin-bottom: 40px;
+}
+
 orange{
     color: #FF4800;
     font-style: italic;
 }
 
+.plus-sign {
+    position: relative;
+  }
+  
+  .plus-sign::before,
+  .plus-sign::after {
+    content: '';
+    position: absolute;
+    background-color: black; /* Set color for the plus sign */
+  }
+  
+  .plus-sign::before {
+    width: 100%;   /* Horizontal bar */
+    height: 10px;  /* Thickness of the horizontal bar */
+    top: 50%;      /* Center it vertically */
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .plus-sign::after {
+    width: 10px;   /* Thickness of the vertical bar */
+    height: 100%;  /* Vertical bar */
+    top: 0;
+    left: 50%;     /* Center it horizontally */
+    transform: translateX(-50%);
+  }
+  
+
 .short-about-desc, .short-about-highlight, .short-about-highlight, .short-about-potrait, .short-about-arrow, .short-about-based{
-    border: 1px solid #575757;
-    border-radius: 8px;
+    border: 1px solid #3f3f3f;
 }
 .short-about-desc{
     padding: 56px;
@@ -266,27 +348,40 @@ orange{
     background-size: 20px 20px;
     /* background-size: cover; */
     /* max-width: 900px; */
-    width: calc(75% - 16px);
+    /* width: calc(75% - 16px); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex: 1 1 auto;
     box-sizing: border-box;
     font-size: 24px;
-    height: 280px;
+    height: 520px;
+    border: 0;
 }   
+.short-about-desc p{
+    max-width: 500px;
+    margin: auto;
+    width: 100%;
+    margin: 0;
+}
 .short-about-highlight{
     padding: 16px;
     min-width: 280px;
-    max-height: 280px;
-    height: 280px;
-    width: calc(25% - 16px);
+    max-width: 440px;
+    max-height: 2260px;
+    height: 220px;
+    width: 100%;
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
     justify-content: flex-end;
-    flex: 1 1 25%;
+    /* flex: 1 1 25%; */
     position: relative;
     overflow: hidden;
     background-image: url(../../assets/Image/shortdesc-bg.png);
     background-size: 100% 100%;
+    /* border-right: 0; */
 }
 .short-about-highlight p{
     text-align: right;
@@ -301,6 +396,12 @@ orange{
     color: #CA2027;
 }
 
+.short-about-container orange{
+    font-style: normal;
+    color: #CA2027;
+    font-weight: 800;
+}
+
 .short-about-highlight .white{
     font-weight: 900;
     font-size: 24px;
@@ -309,7 +410,7 @@ orange{
 
 .short-about-highlight img{
     position: absolute;
-    width: 200px;
+    width: 160px;
     left: -16px;
     top: -24px;
     z-index: -0;
@@ -330,24 +431,26 @@ orange{
     display: block;
 }
 .short-about-based{
-    width: 30%;
+    width: 100%;
+    max-width: 440px;
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
     padding: 24px;
-    gap: 16px;
-    flex: 1 1 auto;
+    gap: 8px;
+    /* flex: 1 1 auto; */
     background-image: url(../../topographic.svg);
-    background-size: cover;
+    background-size: cover;flex-wrap: wrap;
 }
 .short-about-based p{
     text-align: end;
 }
-.short-about-based img{
-    width: 40px;
-    height: 40px;
-}
+/* .short-about-based img{
+    width: 20px;
+    height: 20px;
+} */
 .short-about-arrow{
     box-sizing: border-box;
     display: flex;
@@ -375,33 +478,79 @@ orange{
     padding: 0 16px;
 }
 .section-title-container{
+    margin: auto;
     margin-bottom: 40px;
+    position: relative;
+    width: fit-content;
+}
+
+
+
+.section-title-container .fun{
+    position: absolute;
+    width: 220px;
+    right: -40px;
+    top: -60px;
+    opacity: 0;
+    transform: rotate(10deg) translateY(-10px);
+    transition: all 0.4s ease;
+}
+
+.section-title-container:hover .fun{
+    opacity: 1 !important;
+    transform: rotate(10deg) translateY(0px);
+}
+
+
+.short-about-container{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* gap: 16px; */
 }
 
 .short-about-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
+    /* max-width: 960px; */
+    margin: 0px auto 160px;
+}
+
+.short-about-container .sub-title{
+    color: rgb(160, 160, 160);
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.short-about-container .desc{
+    color: white;
+    font-size: 20px;
 }
 
 .section-title{
-    font-size: 72px;
+    font-size: 56px;
     color: white;
     margin: 0;
     line-height: 100%;
+    text-align: center;
 }
 
 .section-subtitle{
-    display: flex;
-    align-items: baseline;
-    font-size: 24px;
+    font-size: 20px;
     color: #868686;
-    display: flex;
+    display: block;
     gap: 8px;
+    margin: auto;
+    text-align: center;
 }
 
-.section-subtitle img{
- width: 16px;
+.section-title img{
+ width: 32px;
+}
+
+.CTA-container h2{
+    text-align: center;
+    max-width: 840px;
+    width: 100%;
+    margin: auto;
+    display: block;
 }
 
 .about-container{
@@ -435,6 +584,38 @@ orange{
 .about-me-content-container .montserrat-500.white{
     font-size: 20px;
     margin-bottom: 4px;
+}
+
+.resume-button{
+    padding: 24px 8px;
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+.resume-button img{
+    filter: grayscale(1) invert(1);
+    width: 24px;
+}
+
+.resume-button:hover{
+    background-color: #FF4800;
+    color: #ffffff;
+}
+
+.resume-button:hover img{
+    filter: grayscale(1) invert(0);
 }
 
 .date, .employer, .role{
@@ -782,7 +963,7 @@ canvas {
         width: 100%;
         max-width: 1440px;
         display: block;
-        margin: 0px auto 40px;
+        margin: 0px auto 20px;
         box-sizing: border-box;
     }
 
