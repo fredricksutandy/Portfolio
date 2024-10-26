@@ -124,6 +124,7 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 16px;
 }
 .arrow-image-work{
     width: 24px;
@@ -149,7 +150,6 @@ nav a:hover {
 .work-content{
     display: flex;
     justify-content: end;
-    padding: 16px;
     flex-direction: column;
     overflow: hidden;
     position: relative;
@@ -429,6 +429,14 @@ orange{
 }
 .short-about-based{
     top: 32px;
+}
+
+.short-about-based div{
+    display: flex; 
+        gap: 16px;
+        width: 100%;
+        justify-content: flex-end;
+        margin-bottom: 4px;
 }
 
 .based-globe{
@@ -797,7 +805,7 @@ orange{
         gap: 24px;
     }
 
-    
+        
 }
 
 @media (max-width: 648px) {
@@ -813,8 +821,68 @@ orange{
         width: 100% !important;
     }
 
+    .short-about-highlight, .short-about-based{
+        max-height: 2260px;
+        height: 200px;
+    }
+
     .running-text{
-        font-size: 16px !important;
+        font-size: 14px !important;
+    }
+
+    .running-text.middle{
+        font-size: 24px !important;
+        left: -45% !important;
+    }
+
+    .section-title img{
+        display: none;
+    }
+
+    .section-title-container{
+        margin-left: 0;
+        margin-bottom: 24px;
+    }
+
+    .section-subtitle{
+        text-align: start;
+        font-size: 14px;
+        padding: 8px;
+        border-radius: 80px;
+        background: #252525;
+        width: fit-content;
+        color: #FF4800;
+        margin-left: 0;
+        margin-bottom: 4px;
+    }
+
+    .short-about-highlight p, .short-about-based p{
+        text-align: start;
+    }
+
+    .short-about-based div{
+        display: flex; 
+        gap: 16px;
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+
+    .tcid-logo{
+        position: absolute;
+        left: auto;
+        right: 16px;
+        transform: rotate(-20deg);
+        top: -20px;
+        width: 144px;
+        height: auto;
+    }
+
+    .person-pin{
+        position: absolute;
+        right: 24px !important;
+        top: -32px;
+        width: 100px;
+        transform: none;
     }
 
     .animation li {
@@ -852,19 +920,6 @@ orange{
 
     .short-about-highlight .white{
         font-size: 20px;
-    }
-
-    .short-about-based{
-        border-radius: 8px 0 8px 8px;
-        max-height: 220px;
-        height: 220px;
-        font-size: 20px;
-    }
-
-    .short-about-based img{
-        transform: scaleX(-1);
-        right: 0;
-        left: auto;
     }
 
     nav {
@@ -985,7 +1040,8 @@ orange{
     }
 
     .section-title{
-        font-size: 56px;
+        font-size: 44px;
+        text-align: start;
     }
 }
 
@@ -993,21 +1049,19 @@ orange{
   
 
   .work-content{
-  height: 240px;
+  /* height: 240px; */
   display: flex;
   justify-content: end;
-  padding: 8px;
   flex-direction: column;
   overflow: hidden;
   position: relative;
   margin-bottom: 16px;
 }
 
-.image-content{
-  height: 100%;
-  width: auto !important;
-  min-width: 0 !important;
+.work-title{
+    font-size: 24px;
 }
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -1024,7 +1078,6 @@ orange{
   height: 280px;
   display: flex;
   justify-content: end;
-  padding: 8px;
   flex-direction: column;
   overflow: hidden;
   position: relative;
@@ -1045,7 +1098,6 @@ orange{
 height: auto;
 display: flex;
 justify-content: end;
-padding: 8px;
 flex-direction: column;
 overflow: hidden;
 position: relative;
@@ -1064,7 +1116,7 @@ margin-bottom: 16px;
 }
 
 .work-title{
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 800;
 }
 .work-desc{
@@ -1073,6 +1125,16 @@ margin-bottom: 16px;
 
 .tag-container{
   font-size: 12px;
+}
+
+.section-title-container .fun{
+    position: absolute;
+  width: 120px;
+  right: -50px;
+  top: -64px;
+  opacity: 0;
+  transform: rotate(10deg) translateY(-10px);
+  transition: all 0.4s ease;
 }
 }
 
