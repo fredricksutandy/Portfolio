@@ -813,6 +813,12 @@ orange{
         display: none;
     }
 
+    .based-globe{
+        right: auto;
+        left: -56px;
+        bottom: -80px;
+    }
+
     .flex-short-about{
          flex-direction: column;
     }
@@ -1117,7 +1123,7 @@ margin-bottom: 16px;
 
 .work-title{
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 600;
 }
 .work-desc{
   font-size: 12px;
@@ -1125,6 +1131,10 @@ margin-bottom: 16px;
 
 .tag-container{
   font-size: 12px;
+}
+
+.section-title-container .fun{
+    display: none;
 }
 
 .section-title-container .fun{

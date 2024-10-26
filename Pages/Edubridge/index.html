@@ -13,23 +13,23 @@
 </head>
 <body>
     <nav>
-        <a class="montserrat-500 white welcome-link" href="../../index.html"><img src="../hash.svg" alt="">back to home</a>
+        <a class="montserrat-600 white welcome-link" href="../../index.html"><img src="../../hash.svg" alt="">Welcome</a>
         <div class="nav-link-container">
-            <a class="dotgothic16-regular" href="../index.html#works">Works</a>
-            <a class="dotgothic16-regular" href="../index.html#About">Summary</a>
-            <a class="dotgothic16-regular" href="../index.html#footer">Contact</a>
+            <a class="dotgothic16-regular" href="../../index.html#works">Works</a>
+            <a class="dotgothic16-regular" href="../../index.html#About">Summary</a>
+            <a class="dotgothic16-regular" href="../../index.html#footer">Contact</a>
         </div>
         <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
-            <img src="../../assets/Image/icon/carbon_menu.svg" alt="">
+            <img src="../../../../assets/Image/icon/carbon_menu.svg" alt="">
         </div>
         <div class="close-icon" id="close-icon" onclick="toggleMenu()">
-            <img src="../../assets/Image/icon/carbon_close.svg" alt="">
+            <img src="../../../../assets/Image/icon/carbon_close.svg" alt="">
         </div>
     </nav>
     <div class="curtain-menu" id="curtain-menu">
-        <a class="dotgothic16-regular" href="../index.html#works">Works</a>
-        <a class="dotgothic16-regular" href="../index.html#About">Summary</a>
-        <a class="dotgothic16-regular" href="../index.html#footer">Contact</a>
+        <a class="dotgothic16-regular" href="../../index.html#works">Works</a>
+        <a class="dotgothic16-regular" href="../../index.html#About">Summary</a>
+        <a class="dotgothic16-regular" href="../../index.html#footer">Contact</a>
     </div>
 
     <style>
@@ -63,152 +63,84 @@
         .project-details-role, .project-details-employer-date{
             color: white;
         }
-
-        .stack-image{
-            display: flex;
-            gap: -8px;
-            justify-content: flex-start;
-
-        }
-
-        .stack-image div{
-            border: 1px solid #999999;
-            border-radius: 90px;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #000000;
-            margin-left: -4px;
-        }
-
-        .stack-image div:nth-child(1){
-            margin-left: 0;
-        }
-
-        .stack-image div img{
-            width: 24px;
-            height: 24px;
-        }
-
-        .tag-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    align-items: center;
-    margin-top: 4px;
-    z-index: 2;
-}
-.tag-container .uiux{
-    color: black;
-    background-color: #FF4800;
-    padding: 8px 16px;
-
-}
-.tag-container .frontend{
-    color: black;
-    background-color: white;
-    padding: 8px 16px;
-}
-
-.tag-container .hosting{
-    color: white;
-    background: rgb(54,54,54);
-background: -moz-linear-gradient(90deg, rgba(54,54,54,1) 0%, rgba(84,84,84,1) 100%);
-background: -webkit-linear-gradient(90deg, rgba(54,54,54,1) 0%, rgba(84,84,84,1) 100%);
-background: linear-gradient(90deg, rgba(54,54,54,1) 0%, rgba(84,84,84,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#363636",endColorstr="#545454",GradientType=1); 
-    padding: 8px 16px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.tag-container .hosting img{
-    width: 18px;
-}
-
-@media only screen and (max-width: 552px) {
-
-.tag-container{
-  font-size: 12px;
-}
-}
     </style>
 
     <div class="project-details-content-section">
         <div class="project-details-header">
-            <h1 class="project-details-title montserrat-800">Campsite & Travel Website</h1>
-            <img src="/assets/Image/thumbnail/hilinkcamp.png" alt="" class="project-details-thumbnail">
-            <div class="tag-container">
-                <p class="hosting dotgothic16-regular">Hosted on Vercel <img src="../../assets/Image/icon/vercel-logo.png" alt=""> </p>
-                <p class="uiux dotgothic16-regular">UI/UX Designer</p>
-                <p class="frontend dotgothic16-regular">Frontend Development</p>
-            </div>  
+            <h1 class="project-details-title montserrat-800">Edubridge</h1>
+            <img src="../../assets/Image/edubridge-thumb/edubridge-thumb.png" alt="" class="project-details-thumbnail">
+            <div class="project-details-details">
+                <p class="project-details-role montserrat-400">UI UX Designer, Frontend Developer</p>
+                <p class="project-details-employer-date montserrat-400">2023 - present</p>
+            </div>
         </div>
         <div class="overview project-details-sub-section" id="overview">
             <p class="montserrat-600 project-details-subtitle">Overview</p>
-            <p class="montserrat-400 project-details-desc">Developed with Next.js, TailwindCSS, and TypeScript, this landing page not only offers an appealing design but also serves as a practical project to deepen my understanding of React and it's environment.
-            
+            <p class="montserrat-400 project-details-desc">I had the pleasure to collaborate with EduBridge, a renowned educational institution devoted to supporting Indonesian students who choose to pursue their studies overseas. </p>
+            <p class="montserrat-400 project-details-desc">In order to produce a visually appealing and user-friendly platform that was specifically targeted to the client's demands and objectives, I worked closely with them throughout the website's redesign and development phase of the project.</p>
+            <a href="https://edubridge.co.id/" class="web-link montserrat-400" target="_blank">To website!</a>
         </div>
-        <a href="https://travel-next-app-flame.vercel.app/" class="web-link montserrat-400" target="_blank"><img src="../../assets/Image/icon/network-globe.svg" alt="">To website!</a>
-        <!-- <img src="../../orange-arrow-details.svg" alt="" class="project-details-arrow"> -->
+        <img src="../../orange-arrow-details.svg" alt="" class="project-details-arrow">
 
         <div class="overview project-details-sub-section" id="challenges">
-            <p class="montserrat-600 project-details-subtitle">Tech Stack</p>
-            <div class="stack-image">
-                <div>
-                    <img src="../../assets/Image/icon/react-stack.svg" alt="">
-                </div>
-                <div>
-                    <img src="../../assets/Image/icon/next-stack.svg" alt="">
-                </div>
-                <div>
-                    <img src="../../assets/Image/icon/tailwind-stack.svg" alt="">
-                </div>
-            </div>
-            <ul class="montserrat-400 project-details-desc">
-                <li>React.js</li>
-                <li>Next.js</li>
-                <li>Tailwind CSS</li>
-            </ul>
+            <p class="montserrat-600 project-details-subtitle">Challenges</p>
+            <p class="montserrat-400 project-details-desc"><b>Redesigning a fully operated website</b><br>every flow, every layout every chosen icon and image has been deployed to the live page, to redesign such website is a challenge for me because it's hard to implement a drastic change because time and effort was on the measure for the stakeholder</p>
+            <p class="montserrat-400 project-details-desc"><b>Complex Design Requirements</b><br>The design itself was quite challenging. There were specific layout requests that were new and unique for me to design, such as invoices, feedback forms, and other specialized elements.</p>
+            <p class="montserrat-400 project-details-desc"><b>Comprehensive Redesign</b><br>The needs extended beyond just a design revamp. It involved a complete overhaul of the branding and user experience (UX) flow, ensuring that the new design aligned with EduBridge's vision and goals.</p>
+            <p class="montserrat-400 project-details-desc"><b>Stakeholder Management</b><br>The stakeholders commenced a SCRUM meeting every week to review progress and provide feedback. There were multiple stakeholders, each with their own preferences for the design taste</p>
+            <img src="" alt="" class="project-details-img">
         </div>
-        <!-- <img src="../orange-arrow-details.svg" alt="" class="project-details-arrow"> -->
+        <img src="../../orange-arrow-details.svg" alt="" class="project-details-arrow">
 
         <div class="overview project-details-sub-section" id="solutions">
-            <p class="montserrat-600 project-details-subtitle">Features</p>
+            <p class="montserrat-600 project-details-subtitle">Solutions</p>
+            <p class="montserrat-400 project-details-desc"><b>Redesigning a fully operated website</b><br>For every design that needs to be retouched, I always try to find the gaps so the change won't take much effort. I always start with color and images as a starting point; these two factors play a huge role in the quality of the design. Changing the layout can be tricky, but the urgency of improving the experience can help me enforce the necessary changes to my stakeholder.</p>
+            <div class="project-details-img-container">
+
+                <img src="./assets/img/edubridge image 131.png" alt="">
+            </div>
+            <p class="montserrat-400 project-details-desc"><b>Complex Design Requirements</b><br>A large amount of time spent on research and designing many alternatives has helped me a lot in achieving a decent design, which was initially unfamiliar to me. Asking a lot of questions also helps to ensure my design aligns closely with the goals of my stakeholders.</p>
+            <div class="project-details-img-container">
+                <p class="montserrat-400 mb-24 font-12">image of invoice, email and pdf cover design</p>
+
+                <img src="./assets/img/edubridge image 130.png" alt="">
+            </div>
+            <p class="montserrat-400 project-details-desc"><b>Comprehensive Redesign</b><br> Tailoring the design to meet the specific needs of the target audience, such as making it attractive for teenagers and simple enough for parents, is crucial for the success of the project.</p>
+            <p class="montserrat-400 project-details-desc"><b>Stakeholder Management</b><br>Creating many alternative layouts and design to give sample to different stakeholder preferences can be challenging but is necessary for ensuring stakeholder satisfaction. Flexibility in design and being open to feedback are key to successful project delivery.</p>
+        </div>
+        <img src="../../orange-arrow-details.svg" alt="" class="project-details-arrow">
+
+        <div class="overview project-details-sub-section" id="lesson">
+            <p class="montserrat-600 project-details-subtitle">Lesson learned</p>
             <ol>
-                <li class="montserrat-400 project-details-desc mb-24"><b>Appealing Hero Section</b>: A visually captivating hero section that grabs attention and sets the tone for the site.
+                <li class="montserrat-400 project-details-desc mb-24">Designing for unique and complex requirements can be challenging, but it also provides an opportunity to learn and grow. Being adaptable and open to new ideas is essential.</li>
+                <li class="montserrat-400 project-details-desc mb-24">Conducting thorough UX research is crucial for creating designs that are user-centric and meet the needs of the target audience. It helps in making informed design decisions and ensures a better user experience.</li>
+                <li class="montserrat-400 project-details-desc mb-24">An iterative design process, with regular feedback loops, leads to a more refined and successful final product. Continuous improvements based on feedback are essential for meeting client expectations.</li>
+                <li class="montserrat-400 project-details-desc mb-24">Maintaining consistent branding across a website is important for creating a cohesive and professional look. Detailed branding guidelines help in achieving this consistency.</li>
+                <li class="montserrat-400 project-details-desc mb-24" style="word-break: break-all;">I have come up with a formula of copy writing that i come up with myself upon researching a good number of character should be on a title :
+                    <img src="./assets/img/formula.png" alt="" style="width: 100%;"> 
+                below are the realistic case calculation<br><br>
+                    human attention span : 8 seconds https://www.bridgecareaba.com/blog/average-human-attention-span<br><br>
+                    Ideal paragraph char : 50-75 char https://makeitclear.com/ux-ui-tips-a-guide-to-ux-typography/<br><br>
+                    Average reading time : 238 WPM / 3.9 WPS https://scholarwithin.com/average-reading-speed<br><br>
+                    Total reading time for an ideal paragraph: 75/3.9 = 19.2 seconds
+                    Ideal heading length: (8 sec / 19.2) x 75 = 27 words
+
+                    An ideal title should contain no more than 27 words.
                 </li>
-                <li class="montserrat-400 project-details-desc mb-24"><b>Camp Exploration Section</b>: A dedicated area showcasing various camps, allowing users to browse and explore options.
-                </li>
-                <li class="montserrat-400 project-details-desc mb-24"><b>Engaging Travel Guide Section</b>: A compelling travel guide packed with informative content and eye-catching visuals.
-                </li>
-                <li class="montserrat-400 project-details-desc mb-24"><b>Feature-Rich Section</b>: An advanced section offering complex features and detailed information.
-                </li>
-                <li class="montserrat-400 project-details-desc mb-24"><b>Call to Action for Mobile Apps</b>: A call-to-action encouraging users to try the mobile app, complete with download links.
-                </li>
-                <li class="montserrat-400 project-details-desc mb-24"><b>Footer</b>: A comprehensive footer with site links and social media icons for seamless navigation and connectivity.</li>
             </ol>
         </div>
-        <!-- <img src="../orange-arrow-details.svg" alt="" class="project-details-arrow"> -->
-
-        <!-- <div class="overview project-details-sub-section" id="lesson">
-            <p class="montserrat-600 project-details-subtitle">Lesson learned</p>
-            
-        </div> -->  
     </div>
 
     <footer class="mw-700">
         <a href="#top" class="back-to-top montserrat-400">
             Back to top
-            <img src="../assets/Image/icon/back-to-top.svg" alt="">
+            <img src="../../assets/Image/icon/back-to-top.svg" alt="">
         </a>
         <div class="footer-link-container">
-            <a class="dotgothic16-regular" href="../index.html#works">Works</a>
-            <a class="dotgothic16-regular" href="../index.html#about">About</a>
-            <a class="dotgothic16-regular" href="../index.html#footer">Contact</a>
+            <a class="dotgothic16-regular" href="../../index.html#works">Works</a>
+            <a class="dotgothic16-regular" href="../../index.html#about">About</a>
+            <a class="dotgothic16-regular" href="../../index.html#footer">Contact</a>
             <a class="dotgothic16-regular" href="Fredrick_Sutandy_UIUXDesigner.pdf" download>Resume</a>
         </div>
         <div class="lets-talk-container montserrat-400">
@@ -233,20 +165,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#363636",endCo
         padding: 0 16px;
     }
 
-    .web-link:hover{
-        transform: translateX(8px);
-    }
-
     .web-link{
         color: white;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        transition: all 0.25s ease;
-    }
-
-    .web-link img{
-        width: 24px;
     }
 
     footer.mw-700{
@@ -407,7 +327,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#363636",endCo
         display: flex;
         flex-direction: column;
         gap: 16px;
-        padding: 32px 0;
+        padding: 16px 0;
     }
 
     .project-details-subtitle, .project-details-desc{
@@ -416,16 +336,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#363636",endCo
 
     .project-details-subtitle{
         font-size: 24px;
-    }
-
-    ul.project-details-desc{
-        margin-top: 0;
-        padding-left: 16px;
-    }
-
-    ol{
-        margin-top: 0;
-        padding-left: 16px;
     }
     .project-details-arrow{
         display: block;
@@ -441,7 +351,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#363636",endCo
     }
 
     .project-details-title{
-        font-size: 64px;
+        font-size: 96px;
         color: white;
         margin-bottom: 16px;
     }
@@ -449,7 +359,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#363636",endCo
     body{
         padding: 0;
         margin: 0;
-        background-color: #000000;
+        background-color: #171717;
     }
     h1, h2, p{
         margin: 0;
@@ -545,7 +455,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#363636",endCo
 
     @media only screen and (max-width: 648px) {
     .project-details-title{
-        font-size: 32px;
+        font-size: 40px;
         margin-top: 80px;
     }
 }
