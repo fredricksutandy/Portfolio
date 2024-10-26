@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fredrick's</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a class="montserrat-500 white welcome-link" href="../../index.html"><img src="../hash.svg" alt="">back to home</a>
+        <div class="nav-link-container">
+            <a class="dotgothic16-regular" href="../index.html#works">Works</a>
+            <a class="dotgothic16-regular" href="../index.html#About">Summary</a>
+            <a class="dotgothic16-regular" href="../index.html#footer">Contact</a>
+        </div>
+        <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+            <img src="../../assets/Image/icon/carbon_menu.svg" alt="">
+        </div>
+        <div class="close-icon" id="close-icon" onclick="toggleMenu()">
+            <img src="../../assets/Image/icon/carbon_close.svg" alt="">
+        </div>
+    </nav>
+    <div class="curtain-menu" id="curtain-menu">
+        <a class="dotgothic16-regular" href="../index.html#works">Works</a>
+        <a class="dotgothic16-regular" href="../index.html#About">Summary</a>
+        <a class="dotgothic16-regular" href="../index.html#footer">Contact</a>
+    </div>
+
+    <style>
+        .sticky-nav{
+            padding: 16px 0;
+            background-color: black;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+        .sticky-link-container{
+            max-width: 700px;
+            justify-content: space-between;
+            display: flex;
+            
+            
+            margin: auto;
+        }
+
+        .sticky-link-container a{
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+            transition: 0.1s ease-out;
+        }
+
+        .sticky-link-container a:hover{
+            color: #FF4800;
+        }
+
+        .project-details-role, .project-details-employer-date{
+            color: white;
+        }
+
+        .stack-image{
+            display: flex;
+            gap: -8px;
+            justify-content: flex-start;
+
+        }
+
+        .stack-image div{
+            border: 1px solid #999999;
+            border-radius: 90px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000000;
+            margin-left: -4px;
+        }
+
+        .stack-image div:nth-child(1){
+            margin-left: 0;
+        }
+
+        .stack-image div img{
+            width: 24px;
+            height: 24px;
+        }
+
+        .tag-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+    margin-top: 4px;
+    z-index: 2;
+}
+.tag-container .uiux{
+    color: black;
+    background-color: #FF4800;
+    padding: 8px 16px;
+
+}
+.tag-container .frontend{
+    color: black;
+    background-color: white;
+    padding: 8px 16px;
+}
+
+.tag-container .hosting{
+    color: white;
+    background: rgb(54,54,54);
+background: -moz-linear-gradient(90deg, rgba(54,54,54,1) 0%, rgba(84,84,84,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(54,54,54,1) 0%, rgba(84,84,84,1) 100%);
+background: linear-gradient(90deg, rgba(54,54,54,1) 0%, rgba(84,84,84,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#363636",endColorstr="#545454",GradientType=1); 
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tag-container .hosting img{
+    width: 18px;
+}
+
+@media only screen and (max-width: 552px) {
+
+.tag-container{
+  font-size: 12px;
+}
+}
+    </style>
+
+    <div class="project-details-content-section">
+        <div class="project-details-header">
+            <h1 class="project-details-title montserrat-800">Campsite & Travel Website</h1>
+            <img src="/assets/Image/thumbnail/hilinkcamp.png" alt="" class="project-details-thumbnail">
+            <div class="tag-container">
+                <p class="hosting dotgothic16-regular">Hosted on Vercel <img src="../../assets/Image/icon/vercel-logo.png" alt=""> </p>
+                <p class="uiux dotgothic16-regular">UI/UX Designer</p>
+                <p class="frontend dotgothic16-regular">Frontend Development</p>
+            </div>  
+        </div>
+        <div class="overview project-details-sub-section" id="overview">
+            <p class="montserrat-600 project-details-subtitle">Overview</p>
+            <p class="montserrat-400 project-details-desc">Developed with Next.js, TailwindCSS, and TypeScript, this landing page not only offers an appealing design but also serves as a practical project to deepen my understanding of React and it's environment.
+            
+        </div>
+        <a href="https://travel-next-app-flame.vercel.app/" class="web-link montserrat-400" target="_blank"><img src="../../assets/Image/icon/network-globe.svg" alt="">To website!</a>
+        <!-- <img src="../../orange-arrow-details.svg" alt="" class="project-details-arrow"> -->
+
+        <div class="overview project-details-sub-section" id="challenges">
+            <p class="montserrat-600 project-details-subtitle">Tech Stack</p>
+            <div class="stack-image">
+                <div>
+                    <img src="../../assets/Image/icon/react-stack.svg" alt="">
+                </div>
+                <div>
+                    <img src="../../assets/Image/icon/next-stack.svg" alt="">
+                </div>
+                <div>
+                    <img src="../../assets/Image/icon/tailwind-stack.svg" alt="">
+                </div>
+            </div>
+            <ul class="montserrat-400 project-details-desc">
+                <li>React.js</li>
+                <li>Next.js</li>
+                <li>Tailwind CSS</li>
+            </ul>
+        </div>
+        <!-- <img src="../orange-arrow-details.svg" alt="" class="project-details-arrow"> -->
+
+        <div class="overview project-details-sub-section" id="solutions">
+            <p class="montserrat-600 project-details-subtitle">Features</p>
+            <ol>
+                <li class="montserrat-400 project-details-desc mb-24"><b>Appealing Hero Section</b>: A visually captivating hero section that grabs attention and sets the tone for the site.
+                </li>
+                <li class="montserrat-400 project-details-desc mb-24"><b>Camp Exploration Section</b>: A dedicated area showcasing various camps, allowing users to browse and explore options.
+                </li>
+                <li class="montserrat-400 project-details-desc mb-24"><b>Engaging Travel Guide Section</b>: A compelling travel guide packed with informative content and eye-catching visuals.
+                </li>
+                <li class="montserrat-400 project-details-desc mb-24"><b>Feature-Rich Section</b>: An advanced section offering complex features and detailed information.
+                </li>
+                <li class="montserrat-400 project-details-desc mb-24"><b>Call to Action for Mobile Apps</b>: A call-to-action encouraging users to try the mobile app, complete with download links.
+                </li>
+                <li class="montserrat-400 project-details-desc mb-24"><b>Footer</b>: A comprehensive footer with site links and social media icons for seamless navigation and connectivity.</li>
+            </ol>
+        </div>
+        <!-- <img src="../orange-arrow-details.svg" alt="" class="project-details-arrow"> -->
+
+        <!-- <div class="overview project-details-sub-section" id="lesson">
+            <p class="montserrat-600 project-details-subtitle">Lesson learned</p>
+            
+        </div> -->  
+    </div>
+
+    <footer class="mw-700">
+        <a href="#top" class="back-to-top montserrat-400">
+            Back to top
+            <img src="../assets/Image/icon/back-to-top.svg" alt="">
+        </a>
+        <div class="footer-link-container">
+            <a class="dotgothic16-regular" href="../index.html#works">Works</a>
+            <a class="dotgothic16-regular" href="../index.html#about">About</a>
+            <a class="dotgothic16-regular" href="../index.html#footer">Contact</a>
+            <a class="dotgothic16-regular" href="Fredrick_Sutandy_UIUXDesigner.pdf" download>Resume</a>
+        </div>
+        <div class="lets-talk-container montserrat-400">
+            <p class="lets-talk-title">Lets <i>Talk!</i> <img src="fxemoji_waving.png" alt=""></p>
+            <a href="https://www.linkedin.com/in/fredrick-sutandy-4b6535206/" class="linkedin lets-talk-link montserrat-500">LinkedIn</a>
+            <a href="mailto:fredricksutandy2601@gmail.com" class="e-mail lets-talk-link montserrat-500">E-mail</a>
+        </div>
+    </footer>
+</body>
+
+<style>
+    html {
+  scroll-behavior: smooth;
+}
+    /* footer */
+    footer{
+        width: 100%;
+        
+        box-sizing: border-box;
+        margin: 120px auto 120px;
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .web-link:hover{
+        transform: translateX(8px);
+    }
+
+    .web-link{
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.25s ease;
+    }
+
+    .web-link img{
+        width: 24px;
+    }
+
+    footer.mw-700{
+        max-width: 700px;
+    }
+
+    .font-12{
+        font-size: 12px;
+    }
+
+    .project-details-img-container{
+        width: 100%;
+        padding: 16px;
+        background-color: rgb(240, 240, 240);
+        margin-bottom: 40px;
+        box-sizing: border-box;
+    }
+
+    .project-details-img-container img{
+        width: auto;
+        display: block;
+        margin: auto;
+        max-width: 100%;
+    }
+    .back-to-top {
+        display: flex;
+        gap: 16px;
+        margin-left: auto;
+        justify-content: flex-end;
+        color: white;
+        text-decoration: none;
+        align-items: center;
+    }
+
+    .footer-link-container{
+        display: flex;
+        padding-bottom: 24px;
+        border-bottom: 1px solid #53596B;
+        gap: 32px;
+        margin-bottom: 40px;
+    }
+
+    .footer-link-container a{
+        color: white;
+        text-decoration: none;
+        font-size:16px;
+        letter-spacing: 1px;
+        font-weight: normal !important;
+    }
+
+    .lets-talk-title{
+        color: white;
+        font-size: 64px;
+        font-weight: 600 !important;
+        margin-bottom: 32px;
+    }
+    .lets-talk-title i{
+        font-weight: 400 !important;
+    }
+
+    .lets-talk-link{
+        padding: 16px 24px;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+        transition: 0.1s ease-out;
+        border-bottom: 2px solid white;
+    }
+    .lets-talk-link:hover{
+        background: #FF4800;
+        color: white;
+        /* text-decoration: underline; */
+        /* border-right: 2px solid white; */
+    }
+    /* footer */
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 700px;
+        margin: 16px auto;
+        padding: 0 16px;
+        box-sizing: border-box;
+        position: relative;
+        top: 0;
+        width: 100%;
+        z-index: 1001;
+    }
+
+    .welcome-link{
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .menu-icon img, .close-icon img{
+        width: 24px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        letter-spacing: 1px;
+        transition: 0.1s ease-out;
+    }
+
+    nav a:hover {
+        color: #FF4800;
+    }
+
+    .nav-link-container {
+        display: flex;
+        gap: 32px;
+    }
+
+    .menu-icon, .close-icon {
+        display: none;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .curtain-menu {
+        display: none;
+        position: fixed;
+        top: 61px; /* Adjust this to the height of your navbar */
+        left: 0;
+        width: 100%;
+        height: calc(100% - 61px); /* Adjust this to the height of your navbar */
+        background-color: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        /* padding: 24px; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        z-index: 1000;
+    }
+
+    .curtain-menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+        /* margin-bottom: 1px; */
+        /* border-bottom: 1px solid white; */
+        background-color: #000000;
+        padding: 16px 24px;
+
+    }
+
+    .project-details-header{
+        margin-bottom: 16px;
+    }
+    .project-details-thumbnail{
+        width: 100%;
+    }
+
+    .project-details-sub-section{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 32px 0;
+    }
+
+    .project-details-subtitle, .project-details-desc{
+        color: white;
+    }
+
+    .project-details-subtitle{
+        font-size: 24px;
+    }
+
+    ul.project-details-desc{
+        margin-top: 0;
+        padding-left: 16px;
+    }
+
+    ol{
+        margin-top: 0;
+        padding-left: 16px;
+    }
+    .project-details-arrow{
+        display: block;
+        margin: 64px auto;
+    }
+
+    .project-details-content-section{
+        max-width: 700px;
+        padding: 0 16px;
+        box-sizing: border-box;
+        margin: auto;
+        display: block;
+    }
+
+    .project-details-title{
+        font-size: 64px;
+        color: white;
+        margin-bottom: 16px;
+    }
+
+    body{
+        padding: 0;
+        margin: 0;
+        background-color: #000000;
+    }
+    h1, h2, p{
+        margin: 0;
+        padding: 0;
+    }
+
+    h2{
+        line-height: 100%;
+    }
+    .white{
+        color: white;
+    }
+    .orange{
+        color: #FF4800;
+    }
+    .grey-font{
+        color: #999999;
+    }
+
+    .font-16{
+        font-size: 16px;
+    }
+
+    .mb-24{
+        margin-bottom: 24px;
+    }
+
+    orange{
+        color: #FF4800;
+        font-style: italic;
+    }
+
+    .section-container{
+        max-width: 1440px;
+        margin: auto;
+        padding: 0 24px;
+    }
+
+    .short-about-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section-title{
+        font-size: 96px;
+        color: white;
+    }
+
+    .italic{
+        font-style: italic;
+    }
+
+    .dotgothic16-regular {
+        font-family: "DotGothic16", sans-serif;
+        font-style: normal;
+    }
+
+    .montserrat-300 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    }
+
+    .montserrat-400 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    }
+
+    .montserrat-500 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    }
+
+    .montserrat-600 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    }
+
+    .montserrat-700 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    }
+
+    .montserrat-800 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    }
+
+    @media only screen and (max-width: 648px) {
+    .project-details-title{
+        font-size: 32px;
+        margin-top: 80px;
+    }
+}
+
+
+    @media only screen and (max-width: 488px) {
+        .nav-link-container{
+            gap: 24px;
+        }
+    } @media only screen and (max-width: 488px) {
+        .nav-link-container {
+            gap: 24px;
+        }
+    }
+
+    @media (max-width: 648px) {
+        .nav-link-container a {
+            display: none;
+        }
+
+        .menu-icon {
+            display: flex;
+            padding: 16px;
+        }
+
+        .close-icon{
+            padding: 16px;
+            background-color: #171717;
+        }
+        
+        .curtain-menu, .close-icon {
+            display: none;
+        }
+
+        .close-icon, .menu-icon{
+            height: 61px;
+            box-sizing: border-box;
+            transition: 0.1s ease-in-out;
+        }
+
+        .curtain-menu{
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            border-bottom: #ffffff;
+            border-block-end: 1px solid gray;
+            background-color: #000000;
+            z-index: 1001;
+        }
+
+        .welcome-link{
+            padding: 16px;
+        }
+    }
+</style>
+<script>
+function toggleMenu() {
+    const curtainMenu = document.getElementById('curtain-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    if (curtainMenu.style.display === 'flex') {
+        curtainMenu.style.display = 'none';
+        menuIcon.style.display = 'flex';
+        closeIcon.style.display = 'none';
+    } else {
+        curtainMenu.style.display = 'flex';
+        menuIcon.style.display = 'none';
+        closeIcon.style.display = 'flex';
+    }
+}
+</script>
+</html>

@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fredrick's</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="assets/CSS/style.css">
+
+</head>
+<body>
+    <nav>
+        <a class="montserrat-600 white welcome-link" href="" data-aos="fade-up"><img src="hash.svg" alt="">Welcome</a>
+        <div class="nav-link-container">
+            <a class="dotgothic16-regular" href="#works" data-aos="fade-up" data-aos-delay="200">Works</a>
+            <a class="dotgothic16-regular" href="#about" data-aos="fade-up" data-aos-delay="300">About</a>
+            <a class="dotgothic16-regular" href="#footer" data-aos="fade-up" data-aos-delay="400">Contact</a>
+            <a class="dotgothic16-regular" href="Fredrick_Sutandy_UIUXDesigner.pdf" download data-aos="fade-up" data-aos-delay="500">Resume</a>
+        </div>
+        <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+            <img src="./assets/Image/icon/carbon_menu.svg" alt="">
+        </div>
+        <div class="close-icon" id="close-icon" onclick="toggleMenu()">
+            <img src="./assets/Image/icon/carbon_close.svg" alt="">
+        </div>
+    </nav>
+    <div class="curtain-menu" id="curtain-menu">
+        <a class="dotgothic16-regular" href="#home">Home</a>
+        <a class="dotgothic16-regular" href="#about">Summary</a>
+        <a class="dotgothic16-regular" href="#services">Contact</a>
+        <a class="dotgothic16-regular" href="#contact">Resume</a>
+    </div>
+    <canvas id="matter-canvas"></canvas>
+    <div style="max-width: 1440px;margin: auto;">
+        <img src="Frame 519.png" class="title-name-text" id="responsive-image" alt="" style="width: 100%;">
+    </div>
+        <h1 style="font-size: 12px;color: black;position: absolute;z-index: -1;">FREDRICK SUTANDY</h1>
+        <div class="short-about-container section-container">
+            <div class="short-about-desc w-100" data-aos="fade-up" data-aos-delay="400">
+                <p class="sub-title montserrat-700">
+                    What i do best
+                </p>
+        
+                <p class="desc montserrat-700 mb-40">
+                    Blending <orange>Design</orange> and <orange>Develop</orange>ment since 2020,
+                    Painting ideas to canvas, Crafting them with lines of codes. Oversee timeline and <orange>Manage</orange> teams to deliver your loved Products
+                </p>
+            </div>
+
+            <div style="display: flex;flex-wrap: wrap;gap: 16px;justify-content: center;">
+                <div class="short-about-highlight border-4-l-0" style="" data-aos="fade-right" data-aos-offset="300">
+                    <img class="document-head" src="./assets/Image/icon/document-head.svg" alt="">
+                    <p class="grey-font montserrat-500">currently</p>
+                    <p class="white montserrat-700">
+                        Leading a talented programmers at <br><orange>Transcosmos Indonesia</orange></p>
+                    <img class="tcid-logo" src="./assets/Image/tcid-LOGO.png" alt="">
+                </div>
+                <div style="position: relative;">
+                <div class="short-about-based border-4-l-0" data-aos="fade-left" data-aos-delay="200" data-aos-offset="300">
+                    <img class="document-head" src="./assets/Image/icon/document-head.svg" alt="">
+                    <div style="display: flex; gap: 16px;width: 100%;justify-content: flex-end;">
+                        <p class="montserrat-400 grey-font">Based in<br>
+                            Jakarta, Indonesia</p>
+                        <img src="./assets/Image/indonesia-flag.png" alt="">
+                    </div>
+                    <p class="montserrat-600 white" style="display: block;width: 100%;font-size: 20px;">
+                        But I can Code and Design globally!
+                    </p>
+                    <img class="person-pin" src="./assets/Image/icon/carbon_location-person-filled.svg" alt="">
+                </div>
+                <img class="based-globe" data-aos="fade-left" data-aos-delay="200" data-aos-offset="300" src="./assets/Image/icon/network-globe.svg" alt="">
+            </div>
+            </div>
+        </div>
+        <div class="work-container section-container" id="works">
+            <div class="section-title-container work">
+                <p class="section-subtitle montserrat-400" data-aos="fade-up">Selected projects
+                </p>
+                <h2 class="section-title montserrat-700" data-aos="fade-up"><img src="./assets/Image/ellipse-title.svg" alt=""> My Past <orange>Works<orange></h2>
+                    <img class="fun" src="./assets/Image/work.svg" alt="">
+                </div>
+            <div class="works-card-container">
+                <a href="Pages/Edubridge.html" class="work-card" data-aos="fade-up">
+                    <div class="work-content">
+                        <img src="./assets/Image/edubridge-thumb/edubridge-thumb.png" alt="" class="image-content">
+                        <img src="" alt="" class="image-gradient">
+                        <p class="work-title montserrat-600 white mb-8">Edubridge</p>
+                        <div class="tag-container">
+                            <p class="uiux dotgothic16-regular">UI/UX Designer</p>
+                            <p class="frontend dotgothic16-regular">Frontend Development</p>
+                            <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work">
+                        </div>
+                    </div>
+                    
+                </a>
+                <a href="Pages/Erha.html" class="work-card" data-aos="fade-up">
+                    <div class="work-content">
+                        <img src="./assets/Image/ANGE-thumb/ANGE.png" alt="" class="image-content">
+                        <img src="" alt="" class="image-gradient">
+                        <p class="work-title montserrat-600 white mb-8">ERHA Group</p>
+                        <div class="tag-container">
+                            <p class="uiux dotgothic16-regular">UI Prototyping</p>
+                            <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work">
+                        </div>     
+                    </div>
+                    
+                </a>
+                <a href="Pages/Jaya.html" class="work-card" data-aos="fade-up">
+                    <div class="work-content">
+                        <img src="Jaya.png" alt="" class="image-content">
+                        <img src="" alt="" class="image-gradient">
+                        <p class="work-title montserrat-600 white mb-8">Jaya Group</p>
+                        <div class="tag-container">
+                            <p class="frontend dotgothic16-regular">Frontend Development</p>
+                            <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work">
+                        </div>                </div>
+                    
+                </a>
+                <a href="Pages/WSMS.html" class="work-card" data-aos="fade-up">
+                    <div class="work-content"> 
+                        <img src="WS.png" alt="" class="image-content">
+                        <img src="" alt="" class="image-gradient">
+                        <p class="work-title montserrat-600 white mb-8">Willy Soemantri Music School</p>
+                        <div class="tag-container">
+                            <p class="uiux dotgothic16-regular">UI/UX Designer</p>
+                            <p class="frontend dotgothic16-regular">Frontend Development</p>
+                            <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work">
+                        </div>                </div>
+                    
+                </a>
+            </div>
+        </div>
+
+        <div class="work-container section-container">
+            <div class="section-title-container fun">
+                <p class="section-subtitle montserrat-400" data-aos="fade-up">Personal projects
+                </p>
+                <h2 class="section-title montserrat-700" data-aos="fade-up">
+                    <img src="./assets/Image/ellipse-title.svg" alt=""> Me Having <orange>Fun<orange></h2>
+                        <img class="fun" src="./assets/Image/fun.svg" alt="">
+            </div>
+            <div class="works-card-container">
+                <a href="Pages/QADS.html" class="work-card" data-aos="fade-up">
+                    <div class="work-content">
+                        <img src="./assets/Image/Qads-thumb/Qads-thumb.png" alt="" class="image-content">
+                        <img src="" alt="" class="image-gradient">
+                        <p class="work-title montserrat-600 white mb-8">Qads</p>
+                        <div class="tag-container">
+                            <p class="uiux dotgothic16-regular">UI/UX Designer</p>
+                            <p class="frontend dotgothic16-regular">Frontend Development</p>
+                            <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work">
+                        </div>                
+                    </div>
+                    
+                </a>
+                <a href="Pages/FTL.html" class="work-card" data-aos="fade-up">
+                    <div class="work-content">
+                        <img src="FTL-thumb.png" alt="" class="image-content">
+                        <img src="" alt="" class="image-gradient">
+                        <p class="work-title montserrat-600 white mb-8">FTL Gym</p>
+                        <div class="tag-container">
+                            <p class="uiux dotgothic16-regular">UI/UX Designer</p>
+                            <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work">
+                        </div>                
+                    </div>
+                </a>
+                <a href="Pages/Metamorf.html" class="work-card" data-aos="fade-up">
+                    <div class="work-content">
+                        <img src="Metamorf-thumb.png" alt="" class="image-content">
+                        <img src="" alt="" class="image-gradient">
+                        <p class="work-title montserrat-600 white mb-8">Metamorf</p>
+                        <div class="tag-container">
+                            <p class="uiux dotgothic16-regular">UI/UX Designer</p>
+                            <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work">
+                        </div>                
+                    </div>
+                </a>
+                <a href="Pages/Iphone-clone/index.html" class="work-card" data-aos="fade-up">
+                    <div class="work-content">
+                        <img src="/assets/Image/thumbnail/Apple website.png" alt="" class="image-content">
+                        <img src="" alt="" class="image-gradient">
+                        <p class="work-title montserrat-600 white mb-8">3D Iphone clone Website</p>
+                        <div class="tag-container">
+                            <p class="uiux dotgothic16-regular">UI/UX Designer</p>
+                            <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work">
+                        </div>                
+                    </div>
+                </a>
+                <a href="Pages/Next-portfolio/index.html" class="work-card" data-aos="fade-up">
+                    <div class="work-content">
+                        <img src="/assets/Image/thumbnail/Next Portfolio.png" alt="" class="image-content">
+                        <img src="" alt="" class="image-gradient">
+                        <p class="work-title montserrat-600 white mb-8">Modern Developer Portfolio</p>
+                        <div class="tag-container">
+                            <p class="uiux dotgothic16-regular">UI/UX Designer</p>
+                            <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work">
+                        </div>                
+                    </div>
+                </a>
+                <a href="Pages/Hilink/index.html" class="work-card" data-aos="fade-up">
+                    <div class="work-content">
+                        <img src="/assets/Image/thumbnail/hilinkcamp.png" alt="" class="image-content">
+                        <img src="" alt="" class="image-gradient">
+                        <p class="work-title montserrat-600 white mb-8">Campsite & Travel Website</p>
+                        <div class="tag-container">
+                            <p class="uiux dotgothic16-regular">UI/UX Designer</p>
+                            <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work">
+                        </div>                
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    <div class="about-container section-container" id="about">
+        <div class="section-title-container">
+            <p class="section-subtitle montserrat-400" data-aos="fade-up">A little backstory
+            </p>
+            <h2 class="section-title montserrat-700" data-aos="fade-up"><img src="./assets/Image/ellipse-title.svg" alt=""> More About <orange>Me<orange></h2>
+                <img class="fun" src="./assets/Image/introduce.svg" alt="">
+
+        </div>
+        <div>
+            <div class="about-me-content-container" data-aos="fade-up">
+                <div class="about-title-container">
+                    <img src="./assets/Image/icon/carbon_education.svg" alt="">
+                    <p class="montserrat-700 about-me-content-title">Education</p>
+                </div>
+                <p class="montserrat-600 white">Bachelor of Computer Science</p>
+                <p class="montserrat-400 grey-font font-16-14">Bina Nusantara university, indonesia | 2017 - 2021 | GPA 3.57</p>
+            </div>
+            <div class="flex flex-short-about">
+                
+                <div class="about-me-content-container" data-aos="fade-up">
+                    <div class="about-title-container">
+                        <img src="./assets/Image/icon/carbon_badge.svg" alt="">
+                        <p class="montserrat-700 about-me-content-title">Employment history</p>
+                    </div>
+                        <p class="montserrat-500 white mb">Team Leader, Frontend Developer</p>
+                        <p class="date grey-font font-16-14 mb-24">Transcosmos Indonesia | Feb 2023 - Present</p>
+    
+                        <p class="montserrat-500 white">Designer, Frontend developer</p>
+                        <p class="date grey-font font-16-14 mb-24">Edubridge | Part time | Mar 2023 - Present </p>
+    
+                        <p class="montserrat-500 white">Designer, Frontend developer</p>
+                        <p class="date grey-font font-16-14 mb-24">Blankpage Digital | Apr 2021 - Nov 2022</p>
+                        
+                        <p class="montserrat-500 white">Designer, Frontend developer</p>
+                        <p class="date grey-font font-16-14 mb-24">Willy Soemantri MS | Freelance |Feb 2021 - Feb 2022</p>
+    
+                        <p class="montserrat-500 white">Designer, Frontend developer</p>
+                        <p class="date grey-font font-16-14 mb-24">Waroenk Kito | Intern | Feb 2020 - Dec 2020</p>
+                </div>
+                <div class="about-me-content-container" data-aos="fade-up">
+                    <div class="about-title-container">
+                        <img src="./assets/Image/icon/carbon_data-categorical.svg" alt="">
+                        <p class="montserrat-700 about-me-content-title">Skills</p>
+                    </div>
+                    <p class="montserrat-600 white">Design skills</p>
+                    <p class="montserrat-400 grey-font font-16-14 mb-24">UI & UX Design, Figma, Adobe XD, Axure, Framer</p>
+                    <p class="montserrat-600 white">Developer skills</p>
+                    <p class="montserrat-400 grey-font font-16-14 mb-24">HTML, CSS, Javascript, JQuery, React</p>
+                
+                </div>
+                
+            </div>
+                
+                
+                
+            
+            <div class="flex flex-short-about">
+                
+                <div class="about-me-content-container" data-aos="fade-up" >
+                    <div class="about-title-container">
+                        <img src="./assets/Image/icon/carbon_certificate-check.svg" alt="">
+                        <p class="montserrat-700 about-me-content-title">Certification</p>
+                    </div>
+                    <p class="montserrat-600 white">Complete Web & Mobile Designer in 2022: UI/UX & Figma</p>
+                    <p class="montserrat-400 grey-font font-16-14">Udemy course by Andrei Neagoiue & Daniel Schifano | 2022</p>
+    
+                </div>
+                <div class="resume-container" data-aos="fade-up" style="width: 50%;">
+                    <a href="Fredrick_Sutandy_UIUXDesigner.pdf" class="resume-button montserrat-600" style="height: 100%;">
+                        <p>Download Resume </p>
+                        <img src="./assets/Image/carbon_document-download.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="CTA-container section-container">
+        <div class="scroll-container bb-1-w">
+            <div class="running-text small montserrat-500" id="runningText">
+               Website Design * Figma Design * Website & App Redesign * UI & UX Design * Prototyping * Wireframing * Responsive Design * Website Design * Figma Design * Website & App Redesign * UI & UX Design * Prototyping * Wireframing * Responsive Design *
+            </div>
+
+        </div>
+        <div class="scroll-container">
+            <div class="running-text middle montserrat-800" id="runningText">
+                * Tell me your idea * Let’s Chat * Lets Connect * Ask me question * Reach out
+            </div>
+        </div> 
+
+        <div class="scroll-container bt-1-w" style="margin-bottom: -32px;">
+            
+            <div class="running-text small montserrat-500" id="runningText">
+                JQuery * React JS & NEXT JS * HTML * CSS * Javascript * Responsive Website * JQuery * React JS & NEXT JS * HTML * CSS * Javascript * Responsive Website * JQuery * React JS & NEXT JS * HTML * CSS * Javascript * Responsive Website * JQuery * React JS & NEXT JS * HTML * CSS * Javascript * Responsive Website * 
+            </div>
+        </div>
+        <style>
+            body{
+                overflow-x: hidden;
+            }
+            .CTA-container{
+                /* overflow-x: hidden; */
+                position: relative;
+                margin-bottom: -20px;
+            }
+
+            .bb-1-w{
+                border-bottom:2px solid white;
+            }
+            .bt-1-w{
+                border-top:2px solid white;
+            }
+
+            .green-ribbon{
+                padding: 30px;
+                width: 100vw;
+                left: 50%;
+                background-color: #6d1600;
+                position: relative;
+                z-index: -2;
+                transform: translateX(-50%) translateY(20px) rotate(-1deg);
+            }
+            .running-text{
+                text-align: center;
+                white-space: nowrap;
+            }
+
+            .running-text.small{
+                font-size: 20px;
+            }
+
+            .running-text.middle{
+                position: relative;left: -20%;
+            }
+            .scroll-container{
+                /* position: absolute; */
+                position: relative;
+                left: 50%;
+                top: -16px;
+                width: 102vw;
+                background-color: #FF4800;
+                padding: 24px;
+                overflow: hidden;
+                /* border: 0; */
+                box-sizing: border-box;
+                transform: translateX(-50%) rotate(1deg);
+            }
+
+            .scroll-container img{
+                position: absolute;
+                height: calc(100% + 4px);
+                right: -1px;
+                top: -2px;
+                transform: rotate(180deg);
+
+            }
+
+            .scroll-container img.reversed{
+                position: absolute;
+                height: calc(100% + 24px);
+                left: -2px;
+                top: -2px;
+                transform: rotate(0deg);
+
+            }
+
+            .running-text{
+                font-size: 64px;
+                color: white;
+                opacity: 0.65;
+            }
+        </style>
+        <h2 class="section-title montserrat-700" style="position: relative;z-index: 99;">Make Your Ideas Happen! <img src="fxemoji_waving.png" alt=""></h2>
+        <div class="lets-talk-container montserrat-400">
+            <a href="https://www.linkedin.com/in/fredrick-sutandy-4b6535206/" class="linkedin lets-talk-link montserrat-600">Find me on LinkedIn <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work"></a>
+            <a href="mailto:fredricksutandy2601@gmail.com" class="e-mail lets-talk-link montserrat-600">Email me on Gmail <img src="material-symbols-light_arrow-insert.png" class="arrow-image-work"></a>
+        </div>
+    </div>
+
+    <script>
+
+
+const runningTexts = document.querySelectorAll(".running-text");
+
+// Create state objects to track scroll positions and visibility
+let scrollPositions = {}; // Store last scroll positions
+let isInViewports = {};   // Store visibility state
+
+// Initialize scroll tracking for each element
+runningTexts.forEach((el, index) => {
+  scrollPositions[index] = 0; // Initialize scroll position
+  isInViewports[index] = false; // Set visibility state to false
+});
+
+// Function to check if an element is in the viewport
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+  );
+}
+
+// Scroll event listener to move each text independently
+window.addEventListener("scroll", () => {
+  runningTexts.forEach((el, index) => {
+    if (isElementInViewport(el)) {
+      if (!isInViewports[index]) {
+        // When the text enters the viewport, reset scroll tracking
+        scrollPositions[index] = window.scrollY;
+        isInViewports[index] = true;
+      }
+
+      // Calculate the scroll amount and adjust movement speed
+      const scrollAmount = window.scrollY - scrollPositions[index];
+      const speedFactor = 0.15; // Adjust the speed factor
+
+      // Determine the direction based on the class
+      const translateX = el.classList.contains('small')
+        ? -scrollAmount * speedFactor // Move to the left for ".small"
+        : scrollAmount * speedFactor; // Move to the right for others
+
+      // Apply the movement to the current element
+      el.style.transform = `translateX(${translateX}px)`;
+    }
+  });
+});
+
+
+    
+    
+      </script>
+
+    <footer class="" id="footer">
+        <a href="#top" class="back-to-top montserrat-400">
+            Back to top
+            <img src="./assets/Image/icon/back-to-top.svg" alt="">
+        </a>
+        <div class="footer-link-container" >
+            <a class="dotgothic16-regular" href="#works">Works</a>
+            <a class="dotgothic16-regular" href="#about">About</a>
+            <a class="dotgothic16-regular" href="#footer">Contact</a>
+            <a class="dotgothic16-regular" href="Fredrick_Sutandy_UIUXDesigner.pdf" download>Resume</a>
+        </div>
+        <!-- <div class="lets-talk-container montserrat-400" data-aos="fade-up">
+            <p class="lets-talk-title">Lets <i>Talk!</i> <img src="fxemoji_waving.png" alt=""></p>
+            <a href="https://www.linkedin.com/in/fredrick-sutandy-4b6535206/" class="linkedin lets-talk-link montserrat-500 border-4">LinkedIn</a>
+            <a href="mailto:fredricksutandy2601@gmail.com" class="e-mail lets-talk-link montserrat-500 border-4">E-mail</a>
+        </div> -->
+    </footer>
+</body>
+<style>
+    
+</style>
+<script>
+AOS.init();
+
+// Initialize Matter.js
+const { Engine, World, Bodies, Mouse, MouseConstraint } = Matter;
+
+// Create an engine
+const engine = Engine.create();
+
+// Get a reference to the canvas element
+const canvas = document.getElementById('matter-canvas');
+
+// Define a fixed height for the canvas
+const fixedCanvasHeight = 520; // Change this value as needed
+
+// Create a renderer
+const render = Matter.Render.create({
+    canvas: canvas,
+    engine: engine,
+    options: {
+        width: Math.min(window.innerWidth, 1440),
+        height: fixedCanvasHeight,
+        wireframes: false,
+        background: '#000' // Set the background color of the canvas
+    }
+});
+
+// Create some bodies
+const objects = [];
+const images = ["Frame 522.png", "Frame 523.png", "Frame 529.png", "Frame 524.png", "Shape-1.svg", "next_textimg.png", "react_textimg.png", "logos_react.png", "logos_tailwind.png", "logos_figma.png"];
+
+function createBodyFromImage(image, x, y) {
+    const scale = getScale(); // Calculate scale based on window width
+
+    const bodyWidth = image.width * scale;
+    const bodyHeight = image.height * scale;
+
+    return Bodies.rectangle(x, y, bodyWidth, bodyHeight, {
+        render: {
+            sprite: {
+                texture: image.src,
+                xScale: scale,
+                yScale: scale,
+            }
+        },
+        chamfer: {
+                radius: [40,40,40,40]
+            },
+    });
+}
+
+// Function to scale images based on screen width
+function getScale() {
+    return window.innerWidth < 648 ? 0.85 : 1;
+}
+
+// Load images and create bodies
+let imagesLoaded = 0;
+
+images.forEach((imageSrc, index) => {
+    const image = new Image();
+    image.src = imageSrc;
+    image.onload = () => {
+        const x = Math.min(window.innerWidth, 1440) / 4 + Math.random() * Math.min(window.innerWidth, 1440) / 2;
+        const y = fixedCanvasHeight / 4;
+        const object = createBodyFromImage(image, x, y);
+        objects.push(object);
+
+        imagesLoaded++;
+        if (imagesLoaded === images.length) {
+            // Add all the bodies to the world once all images are loaded
+            World.add(engine.world, objects);
+
+            // Create walls
+            function createWalls() {
+                const wallOptions = {
+                    isStatic: true,
+                    render: { visible: false }
+                };
+                const wallThickness = 50;
+                const canvasWidth = render.canvas.width;
+                const canvasHeight = render.canvas.height;
+
+                return [
+                    Bodies.rectangle(canvasWidth / 2, canvasHeight + wallThickness / 2, canvasWidth + wallThickness * 2, wallThickness, wallOptions),
+                    Bodies.rectangle(-wallThickness / 2, canvasHeight / 2, wallThickness, canvasHeight + wallThickness * 2, wallOptions),
+                    Bodies.rectangle(canvasWidth + wallThickness / 2, canvasHeight / 2, wallThickness, canvasHeight + wallThickness * 2, wallOptions),
+                    Bodies.rectangle(canvasWidth / 2, -wallThickness / 2, canvasWidth + wallThickness * 2, wallThickness, wallOptions)
+                ];
+            }
+
+            // Initial walls creation
+            let walls = createWalls();
+            World.add(engine.world, walls);
+
+            // Add mouse control
+            const mouse = Mouse.create(render.canvas);
+            const mouseConstraint = MouseConstraint.create(engine, {
+                mouse: mouse
+            });
+            World.add(engine.world, mouseConstraint);
+
+            // Keep the mouse in sync with rendering
+            render.mouse = mouse;
+
+            // Run the engine
+            Engine.run(engine);
+
+            // Run the renderer
+            Matter.Render.run(render);
+
+            // Handle window resize
+            let initialWidth = window.innerWidth;
+
+            window.addEventListener('resize', () => {
+                const newWidth = Math.min(window.innerWidth, 1440);
+
+                render.options.width = newWidth;
+                canvas.width = newWidth;
+
+                // Reposition objects
+                objects.forEach(object => {
+                    Matter.Body.setPosition(object, {
+                        x: object.position.x * (newWidth / initialWidth),
+                        y: object.position.y // Maintain the same y position
+                    });
+                });
+
+                // Remove old walls and add new ones
+                World.remove(engine.world, walls);
+                walls = createWalls();
+                World.add(engine.world, walls);
+
+                // Add mouse control again
+                const mouse = Mouse.create(render.canvas);
+                const mouseConstraint = MouseConstraint.create(engine, {
+                    mouse: mouse
+                });
+                World.add(engine.world, mouseConstraint);
+
+                // Keep the mouse in sync with rendering
+                render.mouse = mouse;
+
+                // Update initial width
+                initialWidth = newWidth;
+            });
+
+            // Enable scrolling on desktop when mouse is over the canvas
+            canvas.addEventListener('wheel', (event) => {
+                if (!mouseConstraint.body) {
+                    event.preventDefault();
+                    // Adjust the scroll speed by multiplying the deltaY
+                    window.scrollBy({
+                        top: event.deltaY * 3, // Increase the scroll speed
+                        behavior: 'smooth'
+                    });
+                }
+            });
+
+            // Enable scrolling on mobile when touching the canvas
+            let touchStartY = 0;
+
+            canvas.addEventListener('touchstart', (event) => {
+                if (!mouseConstraint.body) {
+                    touchStartY = event.touches[0].clientY;
+                }
+            });
+
+            canvas.addEventListener('touchmove', (event) => {
+                if (!mouseConstraint.body) {
+                    const touchEndY = event.touches[0].clientY;
+                    const deltaY = touchEndY - touchStartY;
+
+                    // Increase scroll speed by scaling the deltaY
+                    window.scrollBy({
+                        top: -deltaY * 2, // Increase the scroll speed
+                        behavior: 'smooth'
+                    });
+
+                    touchStartY = touchEndY; // Update the start position
+                }
+            });
+        }
+    };
+});
+
+</script>
+<script>
+function toggleMenu() {
+    const curtainMenu = document.getElementById('curtain-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    if (curtainMenu.style.display === 'flex') {
+        curtainMenu.style.display = 'none';
+        menuIcon.style.display = 'flex';
+        closeIcon.style.display = 'none';
+    } else {
+        curtainMenu.style.display = 'flex';
+        menuIcon.style.display = 'none';
+        closeIcon.style.display = 'flex';
+    }
+}
+
+window.addEventListener('resize', changeImage);
+
+function changeImage() {
+    const image = document.getElementById('responsive-image');
+    if (window.innerWidth < 648) {
+        image.src = 'Frame 590.png';
+    } else {
+        image.src = 'Frame 519.png';
+    }
+}
+
+// Initial check
+changeImage();
+</script>
+<script src="assets/JS/index.js"></script>
+
+</html>
